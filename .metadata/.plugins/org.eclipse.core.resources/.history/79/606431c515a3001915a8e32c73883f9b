@@ -1,0 +1,60 @@
+#include "timer.h"
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32f1xx_hal.h"
+
+
+void setTimer1PulsePeriod(TIM_TypeDef *timer1,uint32_t channel,uint16_t prescaler,uint32_t arrVal,uint32_t outputCompareVal){
+
+	timer1->CR1 |= 0x7; //auto-reload preload enable
+
+	timer1->ARR = arrVal;
+	timer1->PSC = prescaler-1;
+
+	if(channel == 1)
+		timer1->CCR1 = outputCompareVal;
+	else if(channel == 2)
+		timer1->CCR2 = outputCompareVal;
+	else if(channel == 3)
+			timer1->CCR3 = outputCompareVal;
+	else if(channel == 4)
+			timer1->CCR4 = outputCompareVal;
+
+}
+
+
+
+/*
+ * DTG[7:5]=0xx => DT=DTG[7:0]x tdtg with tdtg=tDTS.
+ * DTG[7:5]=10x => DT=(64+DTG[5:0])xtdtg with Tdtg=2xtDTS.
+ * DTG[7:5]=110 => DT=(32+DTG[4:0])xtdtg with Tdtg=8xtDTS.
+ * DTG[7:5]=111 => DT=(32+DTG[4:0])xtdtg with Tdtg=16xtDTS.
+ * Example if TDTS=125ns (8MHz), dead-time possible values are:
+ * 0 to 15875 ns by 125 ns steps,
+ * 16 us to 31750 ns by 250 ns steps,
+ * 32 us to 63us by 1 us steps,
+ * 64 us to 126 us by 2 us steps
+ */
+
+
+void setTimer1DeadTime(TIM_TypeDef *timer1,uint32_t outPulsePeriod,uint32_t deadTimeMultiplier,uint32_t deadTime_ns){
+
+	uint8_t getDTGVal1,getDTGVal2,getDTGVal3,getDTGVal4;//DTG = dead time generator
+	timer1->BDTR &= ~0xff; //reset dead time value
+
+	getDTGVal1 = deadTime_ns/outPulsePeriod & 0x7f;
+	getDTGVal2 = ((deadTime_ns/2*outPulsePeriod)-64) & 0x3f;
+	getDTGVal3 = ((deadTime_ns/8*outPulsePeriod)-32) & 0x1f;
+	getDTGVal4 = ((deadTime_ns/16*outPulsePeriod)-32) & 0x1f;
+
+	if(deadTimeMultiplier == 1)
+		timer1->BDTR &= (0xff7f & getDTGVal1);//DTG[7:5]=0xx
+	else if(deadTimeMultiplier == 2)
+		timer1->BDTR &= 0xffBf & getDTGVal2;//DTG[7:5]=10x
+	else if(deadTimeMultiplier == 3)
+		timer1->BDTR &= 0xffDf & getDTGVal3;//DTG[7:5]=110
+	else if(deadTimeMultiplier == 4)
+		timer1->BDTR &= 0xffff & getDTGVal4;//DTG[7:5]=111
+
+}
+

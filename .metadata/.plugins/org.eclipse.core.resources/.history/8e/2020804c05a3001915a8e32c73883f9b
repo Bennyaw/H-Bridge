@@ -1,0 +1,39 @@
+#include "timer.h"
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+void setTimer1PulsePeriod(TIM_TypeDef *timer1,uint32_t channel,uint16_t prescaler,uint32_t arrVal,uint32_t outputCompareVal){
+
+	timer1->CR1 |= 0x7; //auto-reload preload enable
+
+	timer1->ARR = arrVal;
+	timer1->PSC = prescaler-1;
+
+	if(channel == 1)
+		timer1->CCR1 = outputCompareVal;
+	else if(channel == 2)
+		timer1->CCR2 = outputCompareVal;
+	else if(channel == 3)
+			timer1->CCR3 = outputCompareVal;
+	else if(channel == 4)
+			timer1->CCR4 = outputCompareVal;
+
+}
+
+
+void setTimer1DeadTime(TIM_TypeDef *timer1,uint32_t ){
+
+
+
+
+
+
+	timer1->BDTR &= ~0xff; //reset dead time value
+	timer1->BDTR |=
+
+
+
+}
+
