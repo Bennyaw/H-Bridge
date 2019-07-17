@@ -1,9 +1,24 @@
-22:01:08 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+22:03:52 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
-C:\Students\Bennyaw\Inductor tester\H_BridgeDriver\H_BridgeDriver\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:137:17: warning: passing argument 1 of 'dutyCycleInit' from incompatible pointer type [-Wincompatible-pointer-types]
+   dutyCycleInit(&htim1,channel_1,ARR_VAL);//set it to default 50% duty cycle
+                 ^
+In file included from ../Src/main.c:44:0:
+C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h:26:6: note: expected 'TIM_TypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef * {aka struct <anonymous> *}'
+ void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val);
+      ^~~~~~~~~~~~~
+../Src/main.c:138:17: warning: passing argument 1 of 'dutyCycleInit' from incompatible pointer type [-Wincompatible-pointer-types]
+   dutyCycleInit(&htim1,channel_2,ARR_VAL);
+                 ^
+In file included from ../Src/main.c:44:0:
+C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h:26:6: note: expected 'TIM_TypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef * {aka struct <anonymous> *}'
+ void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val);
+      ^~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: H_BridgeDriver.elf
@@ -16,8 +31,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
 arm-none-eabi-size "H_BridgeDriver.elf"
    text	   data	    bss	    dec	    hex	filename
-   4980	     20	   1636	   6636	   19ec	H_BridgeDriver.elf
+   4808	     20	   1636	   6464	   1940	H_BridgeDriver.elf
  
 
-22:01:09 Build Finished (took 1s.209ms)
+22:03:53 Build Finished (took 1s.217ms)
 

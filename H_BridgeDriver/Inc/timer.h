@@ -5,7 +5,26 @@
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
 
-void setTimerOutputPulsePeriod(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t prescaler,uint32_t arrVal,uint32_t outputCompareVal);
+typedef enum edgeShift edgeShift;
+enum edgeShift{
+	shiftRisingEdge,
+	shiftFallingEdge,
+	shiftBothEdges
+};
+
+typedef struct dutyCycle dutyCycle;
+struct dutyCycle{
+	int mode;
+	uint32_t rise_edge;
+	uint32_t fall_edge;
+};
+
+
+
+#define clearTimerUIF(htim1)				htim1.Instance->SR &= 0<<0
+
+void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val);
+void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal);
 void setTimer1DeadTime(TIM_TypeDef *timer1,uint32_t clockPeriod_ns,uint32_t deadTimeMultiplier,uint32_t deadTime_ns);
 uint8_t calculateDTGbits(uint32_t clockPeriod_ns,uint8_t deadTimeMultiplier,uint32_t deadTime_ns);
 

@@ -4,13 +4,7 @@
 #include "stm32f1xx_hal.h"
 
 
-void setTimerOutputPulsePeriod(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t prescaler,uint32_t arrVal,uint32_t outputCompareVal){
-
-
-	//timer->Instance->CR1 |= 1<<7; //auto-reload preload enable
-
-	timer->Instance->ARR = arrVal;
-	timer->Instance->PSC = prescaler-1;
+void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal){
 
 	if(channel == 1)
 		timer->Instance->CCR1 = outputCompareVal;
@@ -79,3 +73,32 @@ void configureTimer1_OC_OCN(TIM_TypeDef *timer1,uint32_t configurations){
 	timer1->CCER |= ccer_reg;
 }
 */
+
+/**
+ * This function initialize the duty cycle to 50%, which ccr = arr/2
+ * */
+void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val){
+	setTimerCCRVal(timer,channel,arr_val/2);
+};
+
+
+void setCHN1DutyCycle(TIM_TypeDef *timer,dutyCycle dutyCycle,uint8_t dutyCycle_percent){
+
+	uint16_t arr_val = timer->ARR;
+	uint32_t outPeriod = arr_val*2;
+	uint16_t crr_Val = timer->CCR1;
+	int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
+	int shiftVal=0;
+	/*
+	switch(dutyCycle.mode){
+	case shiftRisingEdge:
+		if(dutyCycle_percent < 50){
+			//shiftVal =
+						}
+
+	}
+*/
+
+
+
+}

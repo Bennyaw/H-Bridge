@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Inc
+HeaderPath=C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Students/Bennyaw/Inductor tester/H_BridgeDriver/H_BridgeDriver/Src
+SourcePath=C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

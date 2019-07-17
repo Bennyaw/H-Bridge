@@ -69,7 +69,9 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 #define channel_2		2
 #define channel_3		3
 #define channel_4		4
+#define TOGGLE			3
 #define PWM_MODE1		6
+#define PWM_MODE2		7
 #define OC1_COMPLEMENT_EN 1<<2
 #define OC2_COMPLEMENT_EN 1<<6
 #define OC1_IDLE_HIGH	1<<8
@@ -87,8 +89,11 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 #define deadTimeMultiply_8	6<<5
 #define deadTimeMultiply_16	7<<5
 
+#define arr_preload_en 1<<7
+#define center_align_3 3<<5;
 
-
+#define ARR_VAL 1000
+#define PSC_VAL 7
 /* USER CODE END 0 */
 
 /**
@@ -124,24 +129,25 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= 0xc8;
-  //htim1.Instance->CR2 |= 1<<9; //OIS1N=1, OIS1 = 0, ideal state
+  htim1.Instance->BDTR |= 0xc3;
 
-  htim1.Instance->SR &= 0<<0;
-  setTimerOutputPulsePeriod(&htim1,channel_1,7,1000,500);
-  setTimerOutputPulsePeriod(&htim1,channel_2,7,1000,800);
-  htim1.Instance->CCMR1 |= PWM_MODE1<<4;
-  htim1.Instance->CCMR1 |= PWM_MODE1<<12;
-  //htim1.Instance->BDTR &= ~0xff;
-
-  //htim1.Instance->CR2 |= OC1N_IDLE_HIGH;
-  //htim1.Instance->BDTR |= OFF_STATE_IDLE;
+  clearTimerUIF(htim1);
+  htim1.Instance->ARR = ARR_VAL;
+  htim1.Instance->PSC = PSC_VAL-1;
+  dutyCycleInit(&htim1,channel_1,ARR_VAL);//set it to default 50% duty cycle
+  dutyCycleInit(&htim1,channel_2,ARR_VAL);
+  setTimerCCRVal(&htim1,channel_1,350);
+  setTimerCCRVal(&htim1,channel_2,850);
+  htim1.Instance->CR1 |= arr_preload_en;
+ // htim1.Instance->CR1 |= center_align_3;
+  htim1.Instance->CCMR1 |= TOGGLE<<4;
+  htim1.Instance->CCMR1 |= TOGGLE<<12;
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
-  HAL_Delay(200);
+  HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_1);
+  //HAL_Delay(200);
   htim1.Instance->CCER |= OC2_COMPLEMENT_EN;
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
+  HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_2);
 
   /* USER CODE END 2 */
 
@@ -225,7 +231,7 @@ static void MX_TIM1_Init(void)
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
+  if (HAL_TIM_OC_Init(&htim1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -237,20 +243,19 @@ static void MX_TIM1_Init(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 500;
+  sConfigOC.OCMode = TIM_OCMODE_TIMING;
+  sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
   sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
-  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
 
-  sConfigOC.Pulse = 800;
-  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
