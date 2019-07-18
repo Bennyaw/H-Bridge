@@ -129,7 +129,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= 0xc3;
+  htim1.Instance->BDTR |= setDeadTime(20000);
 
   clearTimerUIF(htim1);
   htim1.Instance->ARR = ARR_VAL;
@@ -139,7 +139,7 @@ int main(void)
   setTimerCCRVal(&htim1,channel_1,350);
   setTimerCCRVal(&htim1,channel_2,850);
   htim1.Instance->CR1 |= arr_preload_en;
- // htim1.Instance->CR1 |= center_align_3;
+  //htim1.Instance->CR1 |= 1<<8;
   htim1.Instance->CCMR1 |= TOGGLE<<4;
   htim1.Instance->CCMR1 |= TOGGLE<<12;
 
@@ -197,7 +197,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
