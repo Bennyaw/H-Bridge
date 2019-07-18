@@ -63,10 +63,10 @@ uint8_t calculateDTGbits(uint32_t clockPeriod_ns,uint8_t deadTimeMultiplier,uint
 */
 int apb2_clk_int_peiord(void){
 	float period;
-	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1) == 0)//apb2 freq is not divided
+	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1))//apb2 freq is not divided
 		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
 	else
-		period = ((float)1/(float)HAL_RCC_GetHCLKFreq())*(float)(pow(10,9));
+		period = ((float)1/(float)(HAL_RCC_GetPCLK2Freq()*2))*(float)(pow(10,9));
 	return period;
 }
 
@@ -128,7 +128,7 @@ int setDeadTime(uint32_t deadTime_ns){
 /**
  * This function initialize the duty cycle to 50%, which ccr = arr/2
  * */
-void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val){
+void dutyCycleInit(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t arr_val){
 	setTimerCCRVal(timer,channel,arr_val/2);
 };
 
