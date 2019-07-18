@@ -46,6 +46,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim1;
+DMA_HandleTypeDef hdma_tim1_ch1;
+DMA_HandleTypeDef hdma_tim1_ch2;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -55,6 +57,7 @@ TIM_HandleTypeDef htim1;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_TIM1_Init(void);                                    
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
                                 
@@ -65,35 +68,12 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-#define channel_1		1
-#define channel_2		2
-#define channel_3		3
-#define channel_4		4
-#define TOGGLE			3
-#define PWM_MODE1		6
-#define PWM_MODE2		7
-#define OC1_COMPLEMENT_EN 1<<2
-#define OC2_COMPLEMENT_EN 1<<6
-#define OC1_IDLE_HIGH	1<<8
-#define OC1N_IDLE_HIGH	1<<9
-#define OFF_STATE_RUN	1<<11
-#define OFF_STATE_IDLE	1<<10
-
-#define dtgMultiply_1 	1
-#define dtgMultiply_2	2
-#define dtgMultiply_8	8
-#define dtgMultiply_16	16
-
-#define deadTimeMultiply_1 0<<7
-#define deadTimeMultiply_2	2<<6
-#define deadTimeMultiply_8	6<<5
-#define deadTimeMultiply_16	7<<5
-
-#define arr_preload_en 1<<7
-#define center_align_3 3<<5;
 
 #define ARR_VAL 1000
 #define PSC_VAL 7
+uint16_t bufferCCR1[2];
+uint16_t bufferCRR2[2];
+
 /* USER CODE END 0 */
 
 /**
@@ -125,6 +105,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
@@ -139,13 +120,23 @@ int main(void)
   setTimerCCRVal(&htim1,channel_1,350);
   setTimerCCRVal(&htim1,channel_2,850);
   htim1.Instance->CR1 |= arr_preload_en;
-  //htim1.Instance->CR1 |= 1<<8;
   htim1.Instance->CCMR1 |= TOGGLE<<4;
   htim1.Instance->CCMR1 |= TOGGLE<<12;
 
+  bufferCCR1[0]=350;
+  bufferCCR1[1]=350;
+  bufferCRR2[0]=850;
+  bufferCRR2[1]=850;
+
+  hdma_tim1_ch1.Instance->CPAR |= timer1CCR1Address;
+  hdma_tim1_ch2.Instance->CPAR |= timer1CCR2Address;
+  hdma_tim1_ch1.Instance->CNDTR = 2;
+  hdma_tim1_ch2.Instance->CNDTR = 2;
+
+
+
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;
   HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_1);
-  //HAL_Delay(200);
   htim1.Instance->CCER |= OC2_COMPLEMENT_EN;
   HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_2);
 
@@ -184,7 +175,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
@@ -195,11 +186,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV8;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -273,6 +264,24 @@ static void MX_TIM1_Init(void)
   }
 
   HAL_TIM_MspPostInit(&htim1);
+
+}
+
+/** 
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void) 
+{
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
+  /* DMA1_Channel3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
 
 }
 

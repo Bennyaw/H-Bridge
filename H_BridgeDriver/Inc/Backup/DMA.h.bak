@@ -1,0 +1,158 @@
+#ifndef __DMA_H__
+#define __DMA_H__
+
+#include <stdint.h>
+#include "Common.h"
+
+
+
+typedef struct DmaStreamRegs DmaStreamRegs;
+struct DmaStreamRegs{
+	DmaRegister Cr;
+	DmaRegister Ndtr;
+	DmaRegister Par;
+	DmaRegister M0ar;
+	DmaRegister M1ar;
+	DmaRegister Fcr;
+};
+
+typedef struct DmaRegs DmaRegs;
+struct DmaRegs{
+	DmaRegister Lisr;
+	DmaRegister Hisr;
+	DmaRegister Lifcr;
+	DmaRegister Hifcr;
+	DmaStreamRegs S[8];
+};
+
+
+#define Dma1 ((DmaRegs*)0x40020000)
+#define Dma2 ((DmaRegs*)0x40020400)
+
+
+//DMA stream
+#define DMA_STREAM_0	0
+#define DMA_STREAM_1	1
+#define DMA_STREAM_2	2
+#define DMA_STREAM_3	3
+#define DMA_STREAM_4	4
+#define DMA_STREAM_5	5
+#define DMA_STREAM_6	6
+#define DMA_STREAM_7	7
+
+//Hisr & Lisr
+#define DMA_TCIF	(1<<5)
+#define DMA_HTIF	(1<<4)
+#define DMA_TEIF	(1<<3)
+#define DMA_DMEIF	(1<<2)
+#define DMA_FEIF	(1<<0)
+
+//Stream x configuration
+//DMA enable
+#define DMA_ENABLE_MASK		(1<<0)
+#define DMA_EN				(1<<0)
+//DMA direct mode interrupt enable
+#define DMA_DMEIE_MASK		(1<<1)
+#define DMA_DMEIE			(1<<1)
+//DMA transfer error interrupt
+#define DMA_TEIE_MASK		(1<<2)
+#define DMA_TEIE			(1<<2)
+//DMA half transfer error interrupt
+#define DMA_HTIE_MASK		(1<<3)
+#define DMA_HTIE			(1<<3)
+//DMA transfer complete interrupt enable
+#define DMA_TCIE_MASK		(1<<4)
+#define DMA_TCIE			(1<<4)
+//DMA peripheral flow controller
+#define DMA_PFCONTROL_MASK	(1<<5)
+#define DMA_PFCONTROL		(1<<5)
+//DMA memory increment
+#define DMA_DIR_MASK		(3<<6)
+#define DMA_DIR_PtoM		(0<<6)
+#define DMA_DIR_MtoP		(1<<6)
+#define DMA_DIR_MtoM		(2<<6)
+//DMA memory increment
+#define DMA_CIRC_MASK		(1<<8)
+#define DMA_CIRC			(1<<8)
+//DMA peripheral increment
+#define DMA_PINC_MASK		(1<<9)
+#define DMA_PINC			(1<<9)
+//DMA memory increment
+#define DMA_MINC_MASK		(1<<10)
+#define DMA_MINC			(1<<10)
+//DMA peripheral size
+#define DMA_PSIZE_MASK		(3<<11)
+#define DMA_PSIZE8			(0<<11)
+#define DMA_PSIZE16			(1<<11)
+#define DMA_PSIZE32			(2<<11)
+//DMA memory size
+#define DMA_MSIZE_MASK		(3<<13)
+#define DMA_MSIZE8			(0<<13)
+#define DMA_MSIZE16			(1<<13)
+#define DMA_MSIZE32			(2<<13)
+//DMA peripheral increment offset
+#define DMA_PINCOS_MASK		(1<<15)
+#define DMA_PINCOS			(1<<15)
+//DMA priority level
+#define DMA_PRIORITY_MASK	(3<<16)
+#define DMA_PL_LOW			(0<<16)
+#define DMA_PL_MED			(1<<16)
+#define DMA_PL_HIGH			(2<<16)
+#define DMA_PL_VERYHIGH		(3<<16)
+//DMA double buffer
+#define DMA_DBM_MASK		(1<<18)
+#define DMA_DBM				(1<<18)
+//DMA current transfer
+#define DMA_CT_MASK			(1<<19)
+#define DMA_CT				(1<<19)
+//DMA peripheral transfer burst
+#define DMA_PBURST_MASK		(3<<21)
+#define DMA_PBURST1			(0<<21)
+#define DMA_PBURST4			(1<<21)
+#define DMA_PBURST8			(2<<21)
+#define DMA_PBURST16		(3<<21)
+//DMA memory transfer burst
+#define DMA_MBURST_MASK		(3<<23)
+#define DMA_MBURST1			(0<<23)
+#define DMA_MBURST4			(1<<23)
+#define DMA_MBURST8			(2<<23)
+#define DMA_MBURST16		(3<<23)
+//DMA channel selection
+#define DMA_CHANNEL_MASK	(7<<25)
+#define DMA_CHSEL0			(0<<25)
+#define DMA_CHSEL1			(1<<25)
+#define DMA_CHSEL2			(2<<25)
+#define DMA_CHSEL3			(3<<25)
+#define DMA_CHSEL4			(4<<25)
+#define DMA_CHSEL5			(5<<25)
+#define DMA_CHSEL6			(6<<25)
+#define DMA_CHSEL7			(7<<25)
+
+#define dmaClearAllFlags(dma,chn)	dmaCLearStatus(dma,chn, DMA_TCIF | \
+															DMA_HTIF | \
+															DMA_TEIF | \
+															DMA_DMEIF| \
+															DMA_FEIF)
+
+#define dma_Interrupt_ENABLE(dma,stream,interrupt)						\
+		do{																\
+			(dma)->S[stream] &= ~(0xf << 1);							\
+			(dma)->S[stream] |= interrupts;								\
+			}while(0)
+
+#define dma_Interrupt_DISABLE(dma,stream,interrupt)						\
+			(dma)->S[stream] &= ~interrupts
+
+#define dma_Stream_ENABLE(dma,stream)									\
+			(dma)->S[stream].Cr |= DMA_EN;
+
+#define dma_Stream_DISABLE(dma,stream)									\
+			(dma)->S[stream].Cr &= ~DMA_EN;
+
+
+//function header
+void dmaCLearStatus(DmaRegs *dma, int stream, int flags);
+int dmaGetStatus(DmaRegs *dma, int stream, int flags);
+void dmaStreamConfigure(DmaRegs *dma, int stream, int configuration);
+void dmaStreamConfigureOnly(DmaRegs *dma, int stream, int mask, int configuration);
+#endif /* __DMA_H__ */

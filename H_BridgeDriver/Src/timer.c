@@ -4,7 +4,6 @@
 #include "stm32f1xx_hal.h"
 #include <math.h>
 
-#define IsApb2Timer1Prescaled()				htim.Instance
 
 
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal){
@@ -20,48 +19,7 @@ void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCom
 
 }
 
-
-
-/*
- * DTG[7:5]=0xx => DT=DTG[6:0]x tdtg with tdtg=tDTS.
- * DTG[7:5]=10x => DT=(64+DTG[5:0])xtdtg with Tdtg=2xtDTS.
- * DTG[7:5]=110 => DT=(32+DTG[4:0])xtdtg with Tdtg=8xtDTS.
- * DTG[7:5]=111 => DT=(32+DTG[4:0])xtdtg with Tdtg=16xtDTS.
- * Example if TDTS=125ns (8MHz), dead-time possible values are:
- * 0 to 15875 ns by 125 ns steps,
- * 16 us to 31750 ns by 250 ns steps,
- * 32 us to 63us by 1 us steps,
- * 64 us to 126 us by 2 us steps
- */
-
-/*
-void setTimer1DeadTime(TIM_TypeDef *timer1,uint32_t clockPeriod_ns,uint32_t deadTimeMultiplier,uint32_t deadTime_ns){
-
-	timer1->BDTR &= ~0xff; //reset dead time value
-
-}
-
-uint8_t calculateDTGbits(uint32_t clockPeriod_ns,uint8_t deadTimeMultiplier,uint32_t deadTime_ns){
-
-	uint8_t getDTGVal1,getDTGVal2,getDTGVal3,getDTGVal4;//DTG = dead time generator
-
-	getDTGVal1 = deadTime_ns/clockPeriod_ns & 0x7f;
-	getDTGVal2 = ((deadTime_ns/2*clockPeriod_ns)-64) & 0x3f;
-	getDTGVal3 = ((deadTime_ns/8*clockPeriod_ns)-32) & 0x1f;
-	getDTGVal4 = ((deadTime_ns/16*clockPeriod_ns)-32) & 0x1f;
-
-	if(deadTimeMultiplier == 1)
-		return getDTGVal1 = deadTime_ns/clockPeriod_ns & 0x7f;
-	else if(deadTimeMultiplier == 2)
-		return getDTGVal2 = ((deadTime_ns/2*clockPeriod_ns)-64) & 0x3f;
-	else if(deadTimeMultiplier == 8)
-		return getDTGVal3 = ((deadTime_ns/8*clockPeriod_ns)-32) & 0x1f;
-	else if(deadTimeMultiplier == 16)
-		return getDTGVal4 = ((deadTime_ns/16*clockPeriod_ns)-32) & 0x1f;
-
-}
-*/
-int apb2_clk_int_peiord(void){
+int apb2_clk_int_period(void){
 	float period;
 	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1))//apb2 freq is not divided
 		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
@@ -118,7 +76,7 @@ int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base){
 
 
 int setDeadTime(uint32_t deadTime_ns){
-	int period_clk_base = apb2_clk_int_peiord();
+	int period_clk_base = apb2_clk_int_period();
 
 	uint8_t dtgMultiplier = (uint8_t)getdtgMultiplier(deadTime_ns,period_clk_base);
 	uint8_t dtgVal = (uint8_t)getdtgBitsVal(deadTime_ns , period_clk_base);

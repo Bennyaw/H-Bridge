@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Src/DMA.c \
 ../Src/main.c \
 ../Src/stm32f1xx_hal_msp.c \
 ../Src/stm32f1xx_it.c \
@@ -11,6 +12,7 @@ C_SRCS += \
 ../Src/timer.c 
 
 OBJS += \
+./Src/DMA.o \
 ./Src/main.o \
 ./Src/stm32f1xx_hal_msp.o \
 ./Src/stm32f1xx_it.o \
@@ -18,6 +20,7 @@ OBJS += \
 ./Src/timer.o 
 
 C_DEPS += \
+./Src/DMA.d \
 ./Src/main.d \
 ./Src/stm32f1xx_hal_msp.d \
 ./Src/stm32f1xx_it.d \
