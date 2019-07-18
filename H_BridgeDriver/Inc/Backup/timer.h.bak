@@ -32,7 +32,7 @@ enum deadTimeMultiplier{
 
 void dutyCycleInit(TIM_TypeDef *timer,uint32_t channel,uint16_t arr_val);
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal);
-int clk_int_peiord(void);
+int apb2_clk_int_peiord(void);
 int getdtgMultiplier(uint32_t deadTime_ns,int period_clk_base);
 int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base);
 int setDeadTime(uint32_t deadTime_ns);

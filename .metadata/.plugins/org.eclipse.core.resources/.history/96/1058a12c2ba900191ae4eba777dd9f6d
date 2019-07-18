@@ -66,7 +66,7 @@ int apb2_clk_int_peiord(void){
 	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1) == 0)//apb2 freq is not divided
 		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
 	else
-		period = ((float)1/(float)HAL_RCC_GetHCLKFreq())*(float)(pow(10,9));
+		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq()*2)*(float)(pow(10,9));
 	return period;
 }
 

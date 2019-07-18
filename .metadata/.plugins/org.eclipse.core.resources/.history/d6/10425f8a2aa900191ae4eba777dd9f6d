@@ -4,8 +4,6 @@
 #include "stm32f1xx_hal.h"
 #include <math.h>
 
-#define IsApb2Timer1Prescaled()				htim.Instance
-
 
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal){
 
@@ -62,11 +60,7 @@ uint8_t calculateDTGbits(uint32_t clockPeriod_ns,uint8_t deadTimeMultiplier,uint
 }
 */
 int apb2_clk_int_peiord(void){
-	float period;
-	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1) == 0)//apb2 freq is not divided
-		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
-	else
-		period = ((float)1/(float)HAL_RCC_GetHCLKFreq())*(float)(pow(10,9));
+	float period = ((float)1/(float)HAL_RCC_GetHCLKFreq())*(float)(pow(10,9));
 	return period;
 }
 
