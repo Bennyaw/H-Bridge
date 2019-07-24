@@ -23,7 +23,8 @@ Src/main.o: ../Src/main.c \
  C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h
+ C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h \
+ C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/dma.h
 
 C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/main.h:
 
@@ -74,3 +75,5 @@ C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Dri
 C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h:
+
+C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/dma.h:

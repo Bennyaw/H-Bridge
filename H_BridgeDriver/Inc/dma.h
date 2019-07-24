@@ -8,7 +8,9 @@
 #define enableDMAchn2()		hdma_tim1_ch1.Instance->CCR |= 1<<0
 #define enableDMAchn3()		hdma_tim1_ch2.Instance->CCR |= 1<<0
 
-#define half_transfer_inteerupt_en	1<<3
-#define full_transfer_inteerupt_en	1<<2
+#define half_transfer_interupt_en	1<<3
+#define full_transfer_interupt_en	1<<2
+
+#define channel_enable	1<<0
 
 #endif /* __DMA_H__ */
