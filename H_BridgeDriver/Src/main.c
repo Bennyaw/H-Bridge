@@ -71,7 +71,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* USER CODE BEGIN 0 */
 
 #define ARR_VAL 1000
-#define PSC_VAL 7
+#define PSC_VAL 8
 
 
 /* USER CODE END 0 */
@@ -90,7 +90,7 @@ int main(void)
   /* MCU Configuration----------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -108,10 +108,10 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t bufferCCR1[2] = {250,600};
-  uint16_t bufferCCR2[2] = {100,500};
+  uint16_t bufferCCR1[2] = {100,500};
+  uint16_t bufferCCR2[2] = {300,600};
 
-
+  volatile int *dummy =  &(bufferCCR1[1]);
 
   htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
   htim1.Instance->BDTR |= setDeadTime(4300);
@@ -119,11 +119,20 @@ int main(void)
   clearTimerUIF(htim1);
   htim1.Instance->ARR = ARR_VAL;
   htim1.Instance->PSC = PSC_VAL-1;
-  dutyCycleInit(&htim1,channel_1,ARR_VAL);//set it to default 50% duty cycle
-  dutyCycleInit(&htim1,channel_2,ARR_VAL);
-  setTimerCCRVal(&htim1,channel_1,500);
-  setTimerCCRVal(&htim1,channel_2,500);
+  //dutyCycleInit(&htim1,channel_1,ARR_VAL);//set it to default 50% duty cycle
+  //dutyCycleInit(&htim1,channel_2,ARR_VAL);
   htim1.Instance->CR1 |= arr_preload_en;
+
+  htim1.Instance->CCER|= CC11P_AC_LOW;
+  htim1.Instance->CCER|= CC12P_AC_LOW;
+  htim1.Instance->CCER|= CC11PN_AC_LOW;
+  htim1.Instance->CCER|= CC12PN_AC_LOW;
+
+  htim1.Instance->CNT = ARR_VAL-1;
+  setTimerCCRVal(&htim1,channel_1,0);
+  setTimerCCRVal(&htim1,channel_2,0);
+
+
   htim1.Instance->CCMR1 |= TOGGLE<<4;
   htim1.Instance->CCMR1 |= TOGGLE<<12;
 
@@ -142,9 +151,12 @@ int main(void)
   htim1.Instance->DIER |= dma_ccr2_request_en;	//Enable Capture Compare 2 DMA request
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
-  HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_1);	//Enable timer1 chn1 output compare
   htim1.Instance->CCER |= OC2_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
-  HAL_TIM_OC_Start(&htim1,TIM_CHANNEL_2);	//Enable timer1 chn2 output compare
+  htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
+  htim1.Instance->CCER |= OC2_EN;//Enable timer1 chn2 complementary output compare
+  htim1.Instance->BDTR |= MOE_EN;
+  htim1.Instance->CR1 |= CNT_EN;
+
 
   /* USER CODE END 2 */
 
