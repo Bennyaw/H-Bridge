@@ -28,6 +28,7 @@ enum deadTimeMultiplier{
 
 #define timer1CCR1Address 0x40012C34
 #define timer1CCR2Address 0x40012C38
+#define timer1CCR3Address 0x40012C3C
 
 #define channel_1		1
 #define channel_2		2
@@ -38,8 +39,10 @@ enum deadTimeMultiplier{
 #define PWM_MODE2		7
 #define OC1_COMPLEMENT_EN 1<<2
 #define OC2_COMPLEMENT_EN 1<<6
+#define OC3_COMPLEMENT_EN 1<<10
 #define OC1_EN 1<<0
 #define OC2_EN 1<<4
+#define OC3_EN 1<<8
 #define OC1_IDLE_HIGH	1<<8
 #define OC1N_IDLE_HIGH	1<<9
 #define OFF_STATE_RUN	1<<11
@@ -49,9 +52,11 @@ enum deadTimeMultiplier{
 
 #define CC11P_AC_LOW	1<<1
 #define CC12P_AC_LOW	1<<5
+#define CC13P_AC_LOW	1<<9
 
 #define CC11PN_AC_LOW	1<<3
 #define CC12PN_AC_LOW	1<<7
+#define CC13PN_AC_LOW	1<<11
 
 #define dtgMultiply_1 	1
 #define dtgMultiply_2	2
@@ -68,8 +73,10 @@ enum deadTimeMultiplier{
 
 #define dma_ccr1_request_en	1<<9
 #define dma_ccr2_request_en	1<<10
+#define dma_ccr3_request_en	1<<11
 #define dma_ccr1_interrupt_en 1<<1
 #define dma_ccr2_interrupt_en 1<<2
+#define dma_ccr3_interrupt_en 1<<3
 
 
 #define clearTimerUIF(htim1)				htim1.Instance->SR &= 0<<0
