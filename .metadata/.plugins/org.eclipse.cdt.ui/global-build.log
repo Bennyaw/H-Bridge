@@ -1174,3 +1174,114 @@ arm-none-eabi-size "H_BridgeDriver.elf"
    text	   data	    bss	    dec	    hex	filename
    7204	     20	   1772	   8996	   2324	H_BridgeDriver.elf
  
+14:13:58 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:114:26: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                          ^
+../Src/main.c:114:17: warning: unused variable 'dummy' [-Wunused-variable]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                 ^~~~~
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1772	   8996	   2324	H_BridgeDriver.elf
+ 
+14:21:35 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:114:26: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                          ^
+../Src/main.c:114:17: warning: unused variable 'dummy' [-Wunused-variable]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                 ^~~~~
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1772	   8996	   2324	H_BridgeDriver.elf
+ 
+14:24:47 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:30 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:114:26: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                          ^
+../Src/main.c:114:17: warning: unused variable 'dummy' [-Wunused-variable]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                 ^~~~~
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1772	   8996	   2324	H_BridgeDriver.elf
+ 
+17:31:53 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:114:26: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                          ^
+../Src/main.c:114:17: warning: unused variable 'dummy' [-Wunused-variable]
+   volatile int *dummy =  &(bufferCCR1[1]);
+                 ^~~~~
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7172	     20	   1772	   8964	   2304	H_BridgeDriver.elf
+ 

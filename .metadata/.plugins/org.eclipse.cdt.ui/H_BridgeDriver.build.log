@@ -1,4 +1,4 @@
-22:32:09 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+17:31:53 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
@@ -23,8 +23,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
 arm-none-eabi-size "H_BridgeDriver.elf"
    text	   data	    bss	    dec	    hex	filename
-   7204	     20	   1772	   8996	   2324	H_BridgeDriver.elf
+   7172	     20	   1772	   8964	   2304	H_BridgeDriver.elf
  
 
-22:32:10 Build Finished (took 1s.268ms)
+17:31:55 Build Finished (took 1s.867ms)
 

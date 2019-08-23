@@ -108,8 +108,8 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t bufferCCR1[2] = {100,500};
-  uint16_t bufferCCR2[2] = {300,600};
+  uint16_t bufferCCR1[2] = {500,100};
+  uint16_t bufferCCR2[2] = {800,400};
 
   volatile int *dummy =  &(bufferCCR1[1]);
 
@@ -123,10 +123,10 @@ int main(void)
   //dutyCycleInit(&htim1,channel_2,ARR_VAL);
   htim1.Instance->CR1 |= arr_preload_en;
 
-  htim1.Instance->CCER|= CC11P_AC_LOW;
-  htim1.Instance->CCER|= CC12P_AC_LOW;
-  htim1.Instance->CCER|= CC11PN_AC_LOW;
-  htim1.Instance->CCER|= CC12PN_AC_LOW;
+  //htim1.Instance->CCER|= CC11P_AC_LOW;
+  //htim1.Instance->CCER|= CC12P_AC_LOW;
+  //htim1.Instance->CCER|= CC11PN_AC_LOW;
+  //htim1.Instance->CCER|= CC12PN_AC_LOW;
 
   htim1.Instance->CNT = ARR_VAL-1;
   setTimerCCRVal(&htim1,channel_1,0);
