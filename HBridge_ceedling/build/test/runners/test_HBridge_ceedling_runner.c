@@ -60,7 +60,7 @@ extern void test_getdtgBitsVal_deadtime_is_103546ns_range4_expect_return_0x13(vo
 extern void test_getdtgBitsVal_deadtime_is_126800ns_range4_expect_return_0x1F(void);
 extern void test_setDeadTime_deadtime_is_3000ns_range1_expect_return_0x18(void);
 extern void test_getCRRVal_ARR_is_1000_and_dutyCycle_percent_is_30_return_300(void);
-extern void test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_0_expect_new_CCRVal_is_300(void);
+extern void test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_100_expect_new_CCRVal_is_400(void);
 
 
 /*=======Suite Setup=====*/
@@ -120,7 +120,7 @@ int main(void)
   RUN_TEST(test_getdtgBitsVal_deadtime_is_126800ns_range4_expect_return_0x1F, 221);
   RUN_TEST(test_setDeadTime_deadtime_is_3000ns_range1_expect_return_0x18, 230);
   RUN_TEST(test_getCRRVal_ARR_is_1000_and_dutyCycle_percent_is_30_return_300, 251);
-  RUN_TEST(test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_0_expect_new_CCRVal_is_300, 264);
+  RUN_TEST(test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_100_expect_new_CCRVal_is_400, 264);
 
   return suite_teardown(UnityEnd());
 }

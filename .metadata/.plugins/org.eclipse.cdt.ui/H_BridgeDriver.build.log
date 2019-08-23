@@ -1,6 +1,6 @@
-14:58:56 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+17:00:30 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
 make: Nothing to be done for 'all'.
 
-14:58:57 Build Finished (took 489ms)
+17:00:30 Build Finished (took 409ms)
 

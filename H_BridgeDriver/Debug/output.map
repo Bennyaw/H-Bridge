@@ -2808,12 +2808,12 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16
                 0x08001530                _Error_Handler
  *fill*         0x08001532        0x2 
  .text.MX_TIM1_Init
-                0x08001534       0xc8 Src/main.o
+                0x08001534       0xc4 Src/main.o
  .text.SystemClock_Config
-                0x080015fc       0x88 Src/main.o
-                0x080015fc                SystemClock_Config
- .text.main     0x08001684      0x110 Src/main.o
-                0x08001684                main
+                0x080015f8       0x88 Src/main.o
+                0x080015f8                SystemClock_Config
+ .text.main     0x08001680      0x114 Src/main.o
+                0x08001680                main
  .text.HAL_MspInit
                 0x08001794       0xa0 Src/stm32f1xx_hal_msp.o
                 0x08001794                HAL_MspInit
@@ -2864,17 +2864,17 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16
                 0x080019c0                setTimerCCRVal
  *fill*         0x080019ea        0x2 
  .text.apb2_clk_int_period
-                0x080019ec       0x24 Src/timer.o
+                0x080019ec       0x20 Src/timer.o
                 0x080019ec                apb2_clk_int_period
  .text.getdtgMultiplier
-                0x08001a10       0x4c Src/timer.o
-                0x08001a10                getdtgMultiplier
+                0x08001a0c       0x4c Src/timer.o
+                0x08001a0c                getdtgMultiplier
  .text.getdtgBitsVal
-                0x08001a5c       0x7e Src/timer.o
-                0x08001a5c                getdtgBitsVal
+                0x08001a58       0x7e Src/timer.o
+                0x08001a58                getdtgBitsVal
  .text.setDeadTime
-                0x08001ada       0x22 Src/timer.o
-                0x08001ada                setDeadTime
+                0x08001ad6       0x26 Src/timer.o
+                0x08001ad6                setDeadTime
  .text.Reset_Handler
                 0x08001afc       0x48 startup/startup_stm32f103xb.o
                 0x08001afc                Reset_Handler
@@ -3097,7 +3097,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16
                 0x00000353       0x1d c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m/crtn.o
 OUTPUT(H_BridgeDriver.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xfad0
+.debug_info     0x00000000     0xfacc
  .debug_info    0x00000000      0xfa6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_info    0x00000fa6     0x1475 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_info    0x0000241b     0x1014 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -3105,12 +3105,12 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_info    0x000042b6     0x11ef Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
  .debug_info    0x000054a5     0x3660 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_info    0x00008b05     0x1aa8 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_info    0x0000a5ad     0x16ff Src/main.o
- .debug_info    0x0000bcac     0x13cb Src/stm32f1xx_hal_msp.o
- .debug_info    0x0000d077      0xc6c Src/stm32f1xx_it.o
- .debug_info    0x0000dce3      0xc15 Src/system_stm32f1xx.o
- .debug_info    0x0000e8f8     0x1164 Src/timer.o
- .debug_info    0x0000fa5c       0x74 startup/startup_stm32f103xb.o
+ .debug_info    0x0000a5ad     0x16fd Src/main.o
+ .debug_info    0x0000bcaa     0x13cb Src/stm32f1xx_hal_msp.o
+ .debug_info    0x0000d075      0xc6c Src/stm32f1xx_it.o
+ .debug_info    0x0000dce1      0xc15 Src/system_stm32f1xx.o
+ .debug_info    0x0000e8f6     0x1162 Src/timer.o
+ .debug_info    0x0000fa58       0x74 startup/startup_stm32f103xb.o
 
 .debug_abbrev   0x00000000     0x21f6
  .debug_abbrev  0x00000000      0x2f4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -3127,7 +3127,7 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_abbrev  0x00001ef8      0x2ec Src/timer.o
  .debug_abbrev  0x000021e4       0x12 startup/startup_stm32f103xb.o
 
-.debug_loc      0x00000000     0x62ce
+.debug_loc      0x00000000     0x62a5
  .debug_loc     0x00000000       0xfd Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_loc     0x000000fd      0x5ad Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_loc     0x000006aa      0x7aa Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -3137,7 +3137,7 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_loc     0x00004e12      0xf9e Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_loc     0x00005db0       0x6b Src/stm32f1xx_hal_msp.o
  .debug_loc     0x00005e1b       0xdf Src/system_stm32f1xx.o
- .debug_loc     0x00005efa      0x3d4 Src/timer.o
+ .debug_loc     0x00005efa      0x3ab Src/timer.o
 
 .debug_aranges  0x00000000      0x8f8
  .debug_aranges
@@ -3262,7 +3262,7 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_macro   0x0001555e      0x112 Src/timer.o
  .debug_macro   0x00015670      0x1e1 Src/timer.o
 
-.debug_line     0x00000000     0x7a4f
+.debug_line     0x00000000     0x7a4c
  .debug_line    0x00000000      0x8e6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_line    0x000008e6      0x8fe Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_line    0x000011e4      0xab1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -3270,12 +3270,12 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_line    0x00002578      0xa00 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
  .debug_line    0x00002f78     0x16fb Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_line    0x00004673      0xcb5 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_line    0x00005328      0x7e9 Src/main.o
- .debug_line    0x00005b11      0x78f Src/stm32f1xx_hal_msp.o
- .debug_line    0x000062a0      0x7da Src/stm32f1xx_it.o
- .debug_line    0x00006a7a      0x763 Src/system_stm32f1xx.o
- .debug_line    0x000071dd      0x7f5 Src/timer.o
- .debug_line    0x000079d2       0x7d startup/startup_stm32f103xb.o
+ .debug_line    0x00005328      0x7e7 Src/main.o
+ .debug_line    0x00005b0f      0x78f Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0000629e      0x7da Src/stm32f1xx_it.o
+ .debug_line    0x00006a78      0x763 Src/system_stm32f1xx.o
+ .debug_line    0x000071db      0x7f4 Src/timer.o
+ .debug_line    0x000079cf       0x7d startup/startup_stm32f103xb.o
 
 .debug_str      0x00000000    0x706c6
  .debug_str     0x00000000    0x6d415 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -3318,7 +3318,7 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .comment       0x0000007e       0x7f Src/system_stm32f1xx.o
  .comment       0x0000007e       0x7f Src/timer.o
 
-.debug_frame    0x00000000     0x178c
+.debug_frame    0x00000000     0x1790
  .debug_frame   0x00000000      0x1ac Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_frame   0x000001ac      0x12c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_frame   0x000002d8      0x148 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -3326,12 +3326,12 @@ OUTPUT(H_BridgeDriver.elf elf32-littlearm)
  .debug_frame   0x000004f4      0x174 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
  .debug_frame   0x00000668      0x9e0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_frame   0x00001048      0x374 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_frame   0x000013bc       0xac Src/main.o
- .debug_frame   0x00001468       0x88 Src/stm32f1xx_hal_msp.o
- .debug_frame   0x000014f0       0xd8 Src/stm32f1xx_it.o
- .debug_frame   0x000015c8       0x30 Src/system_stm32f1xx.o
- .debug_frame   0x000015f8       0xc0 Src/timer.o
- .debug_frame   0x000016b8       0x4c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00001704       0x38 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x0000173c       0x24 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_fixsfsi.o)
- .debug_frame   0x00001760       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000013bc       0xb0 Src/main.o
+ .debug_frame   0x0000146c       0x88 Src/stm32f1xx_hal_msp.o
+ .debug_frame   0x000014f4       0xd8 Src/stm32f1xx_it.o
+ .debug_frame   0x000015cc       0x30 Src/system_stm32f1xx.o
+ .debug_frame   0x000015fc       0xc0 Src/timer.o
+ .debug_frame   0x000016bc       0x4c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00001708       0x38 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x00001740       0x24 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-m\libgcc.a(_arm_fixsfsi.o)
+ .debug_frame   0x00001764       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)

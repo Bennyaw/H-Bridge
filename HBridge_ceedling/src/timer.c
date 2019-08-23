@@ -4,7 +4,7 @@
 #include <math.h>
 
 
-int clk_int_peiord(void){
+float clk_int_peiord(void){
 	float period = ((float)1/(float)HAL_RCC_GetHCLKFreq)*pow(10,9);
 	return period;
 }

@@ -608,7 +608,7 @@ void test_getCRRVal_ARR_is_1000_and_dutyCycle_percent_is_30_return_300(void){
 
 
 
-void test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_0_expect_new_CCRVal_is_300(void){
+void test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_100_expect_new_CCRVal_is_400(void){
 
   int CCR1 = 100;
 
