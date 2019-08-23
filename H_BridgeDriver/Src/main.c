@@ -48,7 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim1;
 DMA_HandleTypeDef hdma_tim1_ch1;
-DMA_HandleTypeDef hdma_tim1_ch2;
+DMA_HandleTypeDef hdma_tim1_ch3;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -90,7 +90,7 @@ int main(void)
   /* MCU Configuration----------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -108,13 +108,13 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t bufferCCR1[2] = {100,500};
-  uint16_t bufferCCR2[2] = {300,600};
+  uint16_t bufferCCR1[2] = {350,100};
+  uint16_t bufferCCR3[2] = {575,550};
 
-  volatile int *dummy =  &(bufferCCR1[1]);
+  //volatile int *dummy =  &(bufferCCR1[1]);
 
   htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= setDeadTime(4300);
+  htim1.Instance->BDTR |= setDeadTime(2500);
 
   clearTimerUIF(htim1);
   htim1.Instance->ARR = ARR_VAL;
@@ -123,37 +123,37 @@ int main(void)
   //dutyCycleInit(&htim1,channel_2,ARR_VAL);
   htim1.Instance->CR1 |= arr_preload_en;
 
-  htim1.Instance->CCER|= CC11P_AC_LOW;
-  htim1.Instance->CCER|= CC12P_AC_LOW;
-  htim1.Instance->CCER|= CC11PN_AC_LOW;
-  htim1.Instance->CCER|= CC12PN_AC_LOW;
+  //htim1.Instance->CCER|= CC11P_AC_LOW;
+  //htim1.Instance->CCER|= CC13P_AC_LOW;
+  //htim1.Instance->CCER|= CC11PN_AC_LOW;
+  //htim1.Instance->CCER|= CC13PN_AC_LOW;
 
   htim1.Instance->CNT = ARR_VAL-1;
   setTimerCCRVal(&htim1,channel_1,0);
-  setTimerCCRVal(&htim1,channel_2,0);
+  setTimerCCRVal(&htim1,channel_3,0);
 
 
   htim1.Instance->CCMR1 |= TOGGLE<<4;
-  htim1.Instance->CCMR1 |= TOGGLE<<12;
+  htim1.Instance->CCMR2 |= TOGGLE<<4;
 
   hdma_tim1_ch1.Instance->CPAR = timer1CCR1Address;
   hdma_tim1_ch1.Instance->CMAR = (uint32_t)&(bufferCCR1);
-  hdma_tim1_ch2.Instance->CPAR = timer1CCR2Address;
-  hdma_tim1_ch2.Instance->CMAR = (uint32_t)&(bufferCCR2);
+  hdma_tim1_ch3.Instance->CPAR = timer1CCR3Address;
+  hdma_tim1_ch3.Instance->CMAR = (uint32_t)&(bufferCCR3);
 
   hdma_tim1_ch1.Instance->CNDTR = 2;
-  hdma_tim1_ch2.Instance->CNDTR = 2;
+  hdma_tim1_ch3.Instance->CNDTR = 2;
   //hdma_tim1_ch1.DmaBaseAddress->IFCR
 
   hdma_tim1_ch1.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 1
-  hdma_tim1_ch2.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 2
+  hdma_tim1_ch3.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 3
   htim1.Instance->DIER |= dma_ccr1_request_en;	//Enable Capture Compare 1 DMA request
-  htim1.Instance->DIER |= dma_ccr2_request_en;	//Enable Capture Compare 2 DMA request
+  htim1.Instance->DIER |= dma_ccr3_request_en;	//Enable Capture Compare 3 DMA request
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
-  htim1.Instance->CCER |= OC2_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
+  htim1.Instance->CCER |= OC3_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
   htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
-  htim1.Instance->CCER |= OC2_EN;//Enable timer1 chn2 complementary output compare
+  htim1.Instance->CCER |= OC3_EN;//Enable timer1 chn3 complementary output compare
   htim1.Instance->BDTR |= MOE_EN;
   htim1.Instance->CR1 |= CNT_EN;
 
@@ -264,7 +264,7 @@ static void MX_TIM1_Init(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -297,9 +297,9 @@ static void MX_DMA_Init(void)
   /* DMA1_Channel2_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
-  /* DMA1_Channel3_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
+  /* DMA1_Channel6_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel6_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel6_IRQn);
 
 }
 
