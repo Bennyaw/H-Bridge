@@ -107,7 +107,7 @@ void HAL_TIM_OC_MspInit(TIM_HandleTypeDef* htim_oc)
     hdma_tim1_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
     hdma_tim1_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
     hdma_tim1_ch1.Init.Mode = DMA_CIRCULAR;
-    hdma_tim1_ch1.Init.Priority = DMA_PRIORITY_HIGH;
+    hdma_tim1_ch1.Init.Priority = DMA_PRIORITY_LOW;
     if (HAL_DMA_Init(&hdma_tim1_ch1) != HAL_OK)
     {
       _Error_Handler(__FILE__, __LINE__);
@@ -123,7 +123,7 @@ void HAL_TIM_OC_MspInit(TIM_HandleTypeDef* htim_oc)
     hdma_tim1_ch3.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
     hdma_tim1_ch3.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
     hdma_tim1_ch3.Init.Mode = DMA_CIRCULAR;
-    hdma_tim1_ch3.Init.Priority = DMA_PRIORITY_HIGH;
+    hdma_tim1_ch3.Init.Priority = DMA_PRIORITY_LOW;
     if (HAL_DMA_Init(&hdma_tim1_ch3) != HAL_OK)
     {
       _Error_Handler(__FILE__, __LINE__);

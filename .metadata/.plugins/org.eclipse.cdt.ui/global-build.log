@@ -1,4 +1,10 @@
-17:00:24 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+15:59:52 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:55 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:01:20 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
@@ -18,6 +24,679 @@ arm-none-eabi-size "H_BridgeDriver.elf"
    text	   data	    bss	    dec	    hex	filename
    7176	     20	   1772	   8968	   2308	H_BridgeDriver.elf
  
-17:00:30 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+16:01:24 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:24 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:39 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:58 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:08 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7176	     20	   1772	   8968	   2308	H_BridgeDriver.elf
+ 
+16:08:09 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7176	     20	   1772	   8968	   2308	H_BridgeDriver.elf
+ 
+16:11:05 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7168	     20	   1772	   8960	   2300	H_BridgeDriver.elf
+ 
+16:15:44 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+In file included from ../Src/main.c:44:0:
+C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc/timer.h:83:8: error: no macro name given in #define directive
+ #define
+        ^
+Src/subdir.mk:33: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+16:16:03 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/timer.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
+../Src/timer.c: In function 'setCHN1DutyCycle':
+../Src/timer.c:100:6: warning: unused variable 'shiftVal' [-Wunused-variable]
+  int shiftVal=0;
+      ^~~~~~~~
+../Src/timer.c:99:6: warning: unused variable 'newCcrVal' [-Wunused-variable]
+  int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
+      ^~~~~~~~~
+../Src/timer.c:98:11: warning: unused variable 'crr_Val' [-Wunused-variable]
+  uint16_t crr_Val = timer->CCR1;
+           ^~~~~~~
+Finished building: ../Src/timer.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7176	     20	   1772	   8968	   2308	H_BridgeDriver.elf
+ 
+16:16:08 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:17 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7160	     20	   1772	   8952	   22f8	H_BridgeDriver.elf
+ 
+16:17:20 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:34 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:15 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:28 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:22:07 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7156	     20	   1772	   8948	   22f4	H_BridgeDriver.elf
+ 
+16:23:17 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:45 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:10 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7164	     20	   1772	   8956	   22fc	H_BridgeDriver.elf
+ 
+16:26:43 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7164	     20	   1772	   8956	   22fc	H_BridgeDriver.elf
+ 
+16:28:33 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7156	     20	   1772	   8948	   22f4	H_BridgeDriver.elf
+ 
+16:29:29 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7156	     20	   1772	   8948	   22f4	H_BridgeDriver.elf
+ 
+16:29:32 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:33:15 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Src/timer.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
+../Src/timer.c: In function 'setCHN1DutyCycle':
+../Src/timer.c:100:6: warning: unused variable 'shiftVal' [-Wunused-variable]
+  int shiftVal=0;
+      ^~~~~~~~
+../Src/timer.c:99:6: warning: unused variable 'newCcrVal' [-Wunused-variable]
+  int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
+      ^~~~~~~~~
+../Src/timer.c:98:11: warning: unused variable 'crr_Val' [-Wunused-variable]
+  uint16_t crr_Val = timer->CCR1;
+           ^~~~~~~
+Finished building: ../Src/timer.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7156	     20	   1772	   8948	   22f4	H_BridgeDriver.elf
+ 
+16:33:39 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:33:41 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7156	     20	   1772	   8948	   22f4	H_BridgeDriver.elf
+ 
+16:33:46 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:09 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:22 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Src/timer.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
+../Src/timer.c: In function 'setCHN1DutyCycle':
+../Src/timer.c:100:6: warning: unused variable 'shiftVal' [-Wunused-variable]
+  int shiftVal=0;
+      ^~~~~~~~
+../Src/timer.c:99:6: warning: unused variable 'newCcrVal' [-Wunused-variable]
+  int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
+      ^~~~~~~~~
+../Src/timer.c:98:11: warning: unused variable 'crr_Val' [-Wunused-variable]
+  uint16_t crr_Val = timer->CCR1;
+           ^~~~~~~
+Finished building: ../Src/timer.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7148	     20	   1772	   8940	   22ec	H_BridgeDriver.elf
+ 
+16:34:31 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:49 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7160	     20	   1772	   8952	   22f8	H_BridgeDriver.elf
+ 
+16:35:52 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:31 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:34 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7140	     20	   1772	   8932	   22e4	H_BridgeDriver.elf
+ 
+16:38:37 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+make: Nothing to be done for 'all'.
+16:41:00 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7140	     20	   1772	   8932	   22e4	H_BridgeDriver.elf
+ 
+17:01:57 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/timer.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
+../Src/timer.c: In function 'setCHN1DutyCycle':
+../Src/timer.c:100:6: warning: unused variable 'shiftVal' [-Wunused-variable]
+  int shiftVal=0;
+      ^~~~~~~~
+../Src/timer.c:99:6: warning: unused variable 'newCcrVal' [-Wunused-variable]
+  int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
+      ^~~~~~~~~
+../Src/timer.c:98:11: warning: unused variable 'crr_Val' [-Wunused-variable]
+  uint16_t crr_Val = timer->CCR1;
+           ^~~~~~~
+Finished building: ../Src/timer.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7140	     20	   1772	   8932	   22e4	H_BridgeDriver.elf
+ 
+17:02:42 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Students\Bennyaw\SMPS\H_BridgeDriver\H_BridgeDriver\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Bennyaw/SMPS/H_BridgeDriver/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: H_BridgeDriver.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
+Finished building target: H_BridgeDriver.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
+arm-none-eabi-size "H_BridgeDriver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7140	     20	   1772	   8932	   22e4	H_BridgeDriver.elf
+ 
+17:02:45 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
 make: Nothing to be done for 'all'.

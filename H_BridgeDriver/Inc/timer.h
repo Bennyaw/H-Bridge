@@ -26,6 +26,7 @@ enum deadTimeMultiplier{
 	periodMultiplier_16 = 16
 };
 
+
 #define timer1CCR1Address 0x40012C34
 #define timer1CCR2Address 0x40012C38
 #define timer1CCR3Address 0x40012C3C
@@ -70,14 +71,15 @@ enum deadTimeMultiplier{
 
 #define arr_preload_en 1<<7
 #define center_align_3 3<<5;
+#define cap_com_preload_en 1<<0
 
 #define dma_ccr1_request_en	1<<9
 #define dma_ccr2_request_en	1<<10
 #define dma_ccr3_request_en	1<<11
+
 #define dma_ccr1_interrupt_en 1<<1
 #define dma_ccr2_interrupt_en 1<<2
 #define dma_ccr3_interrupt_en 1<<3
-
 
 #define clearTimerUIF(htim1)				htim1.Instance->SR &= 0<<0
 
