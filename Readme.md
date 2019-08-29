@@ -10,7 +10,8 @@ Table of Content
 2. [H-Bridge](#hbridge)  
 3. [IR2113](#ir2113)  
     1. [Bootstrap Capacitor](#bootcap)  
-    2. [Over Current Protection](#ocp)  
+4. [Protection Circuit](#protectcircuit)
+    1. [Over Current Protection](#ocp)  
 
 # <a name = req></a> Requirement  
 Software
@@ -36,6 +37,11 @@ Equipmemt
 -GD74LS00 NAND Gate  
 
 ## <a name = hbridge></a> H-Bridge   
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/h%20bridge%20sch.png)  
+<div align="center">
+  Figure 0. Schematic of H-Bridge DC-DC converter without subcircuit
+</div>  
+
 H-Bridge is a DC-DC converter topology which has four switching components in the system, which here are N-Channel MOSFETs, across a transformer. During the operation, a pair of MOSFETs is switched on 1 side of the driver at the same time.  
 When "a pair of MOSFETs is switched" means that either 1 MOSFET is turn **OFF** and another 1 is **ON**, from the schmatic below, M1, M2 is a pair and drove by 1 MOSFET Driver, M3,M4 will be another one.
 The arrow shows how the current go through the MOSFET during the operation.
@@ -48,7 +54,7 @@ In order let current flow, either M1 M4 turn **ON** , or either M2 M3 turn **ON*
   Figure 1. Schematic of IR2113 Mosfet Driver in Multisim
 </div>  
 
-#### <a name = bootcap></a> Bootstrap Capacitor  
+### <a name = bootcap></a> Bootstrap Capacitor  
 The reason we want to have a driver is because there is the Highside MOSFET, which is M1 and M3 from the circuit above, do not have sufficient Vgs value to turn **ON** fully, therefore it cannot deliver full power to the load. So, the driver is used here.  
 In the circuit of IR2113 below, the bootstrap capacitor will be charged up to VCC voltage when to highside MOSFET is OFF, source voltage of MOSFET is floating. When the transistor is turn ON, the bootstrap capacitor will make sure the gate-source voltage is enough to fully turn on the transistor. Suggested VCC supply to IR2113 is 15V. [Link](https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e.) to IR2113 Datasheet      
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/IR2113%20datasheet%20sch.PNG)  
@@ -63,9 +69,21 @@ To calculate the bootstrap capacitor value, can refer to the application note [h
   Figure 3. Equation to calculate minimun bootstrap capacitance 
 </div>  
 
-#### <a name = ocp></a> Over Current Protection 
-R8 resistor is the **sense resistor**, this resistor is to constantly watch the amount of current in the system. To make sure the current does not exceed and damage the circuit, **over protection circuit** is introduced.
+## <a name = protectcircuit></a> Protection Circuit  
+The **LDO**, low-dropout voltage regulator, is there to give a maximum 3.3V voltage input to compartor, and we also want to reduce the number power supply in the circuit system. So, we have a supply of 12V-15V(Depends on the VCC voltage for IR2113) for the LM7805 supply a 5V output voltage to LM311N comparator. Then LM1117-3.3 will take 5V input and geenrate 3.3V to trimpot to set a voltage reference at the inverting pin of comparator.  
 
+The **SCR**, silicon controlled rectifier, is to act as a memory or latching component. Whenever there is a over current or voltage happen on the *current sense resistor* or *load* respectively, it will triggered the SCR and pull the voltage at **OCP** and **OVP** until is it reset. The LED is a indicator to indicates the SCR is triggered.  
+To **reset** SCR  
+-remove power supply for SCR,stop the current flowing through SCR  
+-give negative voltage on the gate  
+When SCR is triggered here means that the circuit is at risk of damage,either over current on the primary side or over voltage on the load, we want the driver to stop immediately before any further damage on the system. So to do that, we connect the OCP and OVP to a NAND gate, output of NAND gate is connected to the SD(shutdown) pin on the IR2113 to stop the system.
+
+### <a name = ocp></a> Over Current Protection 
+R8 resistor (in figure 0) is the **current sense resistor**, this resistor is to constantly watch the amount of current in the system. Usually having very small resistance, below 1Ohm. To make sure the current does not exceed and damage the transistors, **over protection circuit** is introduced.  
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/over%20protection%20circuit.png)  
+<div align="center">
+  Figure 4. Schematic of Over Current Protection on current sense resistor
+</div>  
 
 
 
