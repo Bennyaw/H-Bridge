@@ -7,24 +7,24 @@ The overall system works as the block diagram shows below. The microcontroller i
 
 Software
 --------
--STM32CubeMX
--Eclipse
--Ceedling
+-STM32CubeMX  
+-Eclipse  
+-Ceedling  
 
 Equipmemt
 -----------
--STM32F103C8T6 Blue pill
--STM32F103 Smart V2
--30V/3A power supply test bench
--4x STP80NF70 N-Channel MOSFET
--2x IR2113 MOSFET Driver
--2x C106D SCR
--2x LDO LM1117//need to be confirm
--2x LDO //need to be confirm
--2x 2k Trimpot
--2X LM311N Comparator
--perf board
--GD74LS00 NAND Gate
+-STM32F103C8T6 Blue pill  
+-STM32F103 Smart V2  
+-30V/3A power supply test bench  
+-4x STP80NF70 N-Channel MOSFET  
+-2x IR2113 MOSFET Driver  
+-2x C106D SCR  
+-2x LDO LM1117//need to be confirm  
+-2x LDO //need to be confirm  
+-2x 2k Trimpot  
+-2X LM311N Comparator  
+-perf board  
+-GD74LS00 NAND Gate  
 
 Introduction
 ============
