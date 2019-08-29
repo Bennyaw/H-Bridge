@@ -9,6 +9,8 @@ Table of Content
 1. [Requirement](#req)  
 2. [H-Bridge](#hbridge)  
 3. [IR2113](#ir2113)  
+    1. [Bootstrap Capacitor](#bootcap)  
+    2. [Over Current Protection](#ocp)  
 
 # <a name = req></a> Requirement  
 Software
@@ -40,25 +42,30 @@ The arrow shows how the current go through the MOSFET during the operation.
 In order let current flow, either M1 M4 turn **ON** , or either M2 M3 turn **ON**.  
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/4%20mosfets.PNG)
 
-## <a name = ir2113></a> IR2113 MOSFET Driver
+## <a name = ir2113></a> IR2113 MOSFET Driver  
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/IR2113%20with%20h-bridge.png)
+<div align="center">
+  Figure 1. Schematic of IR2113 Mosfet Driver in Multisim
+</div>  
+
+#### <a name = bootcap></a> Bootstrap Capacitor  
 The reason we want to have a driver is because there is the Highside MOSFET, which is M1 and M3 from the circuit above, do not have sufficient Vgs value to turn **ON** fully, therefore it cannot deliver full power to the load. So, the driver is used here.  
 In the circuit of IR2113 below, the bootstrap capacitor will be charged up to VCC voltage when to highside MOSFET is OFF, source voltage of MOSFET is floating. When the transistor is turn ON, the bootstrap capacitor will make sure the gate-source voltage is enough to fully turn on the transistor. Suggested VCC supply to IR2113 is 15V. [Link](https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e.) to IR2113 Datasheet      
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/IR2113%20datasheet%20sch.PNG)  
 <div align="center">
-  Figure 1. Suggested construction of IR2113 in datasheet
+  Figure 2. Suggested construction of IR2113 in datasheet
 </div>  
 
 To calculate the bootstrap capacitor value, can refer to the application note [here](https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085) , page 5&6.  
 
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/equation%20for%20bootstrap%20capacitance.PNG)
   <div align="center">
-  Figure 2. Equation to calculate minimun bootstrap capacitance 
+  Figure 3. Equation to calculate minimun bootstrap capacitance 
 </div>  
 
-![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/IR2113%20with%20h-bridge.png)
-<div align="center">
-  Figure 3. Schematic of IR2113 Mosfet Driver in Multisim
-</div>  
+#### <a name = ocp></a> Over Current Protection 
+R8 resistor is the **sense resistor**, this resistor is to constantly watch the amount of current in the system. To make sure the current does not exceed and damage the circuit, **over protection circuit** is introduced.
+
 
 
 
