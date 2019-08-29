@@ -48,10 +48,16 @@ In the circuit of IR2113 below, the bootstrap capacitor will be charged up to VC
   Figure 1. Suggested construction of IR2113 in datasheet
 </div>  
 
-  
+To calculate the bootstrap capacitor value, can refer to the application note [here](https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085) , page 5&6.  
+
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/equation%20for%20bootstrap%20capacitance.PNG)
+  <div align="center">
+  Figure 2. Equation to calculate minimun bootstrap capacitance 
+</div>  
+
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/IR2113%20with%20h-bridge.png)
 <div align="center">
-  Figure 2. Schematic of IR2113 Mosfet Driver in Multisim
+  Figure 3. Schematic of IR2113 Mosfet Driver in Multisim
 </div>  
 
 
@@ -67,4 +73,6 @@ http://publications.lib.chalmers.se/records/fulltext/173958/173958.pdf
 [3] Using the high-low side driver IR2110 - explanation and plenty of example circuits, Tahmid’s blog,  
 http://tahmidmc.blogspot.com/2013/01/using-high-low-side-driver-ir2110-with.html  
 [4] IR2110(S)PbF/IR2113(S)PbF  
-https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e
+https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e  
+[5] Application Note AN-978, Intertional Rectifier,  
+https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085
