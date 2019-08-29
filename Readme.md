@@ -7,13 +7,16 @@ The overall system works as the block diagram shows below. The microcontroller i
 Table of Content
 ================
 1. [Requirement](#req)  
-2. [H-Bridge](#hbridge)  
+2. [H-Bridge](#hbridge)  //will be including Rsense signal result  
 3. [IR2113](#ir2113)  
     1. [Bootstrap Capacitor](#bootcap)  
 4. [Protection Circuit](#protectcircuit)
     1. [Over Current Protection](#ocp)  
     1. [Over Voltage Protection](#ovp)  
-
+5. [STM32F103C8T6](#uc)  
+    1. [Setting Up Microcontroller](#setup)  //will be including steps to configure timer  
+    2. [DeadTime Insertion](#deadtime)  
+    
 # <a name = req></a> Requirement  
 Software
 --------
@@ -109,6 +112,35 @@ The comparator non-inverting input(+) voltage  is comparing with the Vref at the
 When V(+) > V(-) : Vout=5V, SCR trigger  
 When V(+) < V(-) : Vout=0V, SCR is not trigger  
 
+//will add a combined schematic circuit of OCP and OVP
+## <a name = uc></a> STM32F103C8T6  
+Both the microcontroller is using the same ARM processor, but blue pill has the debug feature, so it is the programme board and smart V2 board is the target board. Download the program on the blue pill and runs on smart V2 board.
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/circuit%20stm32.jpg" width="220">  
+
+### <a name = setup></a> Setting Up Microcontroller  
+1. Find the swd pins on the smart v2.  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/connection%20between%20blue%20pill%20and%20smart%20v2.jpg" width="500">  
+
+2. Connections between blue pill and smart V2  
+
+3. Plug in USB cable to blue pill. Make sure both the MCU have sufficient voltage power supply.  
+4. Run simple program to test whether is working or not.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Reference
@@ -122,4 +154,6 @@ http://tahmidmc.blogspot.com/2013/01/using-high-low-side-driver-ir2110-with.html
 [4] IR2110(S)PbF/IR2113(S)PbF  
 https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e  
 [5] Application Note AN-978, Intertional Rectifier,  
-https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085
+https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085  
+[6] J-LINK,  
+https://docs.platformio.org/en/latest/plus/debug-tools/jlink.html
