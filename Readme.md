@@ -12,6 +12,7 @@ Table of Content
     1. [Bootstrap Capacitor](#bootcap)  
 4. [Protection Circuit](#protectcircuit)
     1. [Over Current Protection](#ocp)  
+    1. [Over Voltage Protection](#ovp)  
 
 # <a name = req></a> Requirement  
 Software
@@ -41,7 +42,7 @@ Equipmemt
 <div align="center">
   Figure 0. Schematic of H-Bridge DC-DC converter without subcircuit
 </div>  
-
+  
 H-Bridge is a DC-DC converter topology which has four switching components in the system, which here are N-Channel MOSFETs, across a transformer. During the operation, a pair of MOSFETs is switched on 1 side of the driver at the same time.  
 When "a pair of MOSFETs is switched" means that either 1 MOSFET is turn **OFF** and another 1 is **ON**, from the schmatic below, M1, M2 is a pair and drove by 1 MOSFET Driver, M3,M4 will be another one.
 The arrow shows how the current go through the MOSFET during the operation.
@@ -73,19 +74,40 @@ To calculate the bootstrap capacitor value, can refer to the application note [h
 The **LDO**, low-dropout voltage regulator, is there to give a maximum 3.3V voltage input to compartor, and we also want to reduce the number power supply in the circuit system. So, we have a supply of 12V-15V(Depends on the VCC voltage for IR2113) for the LM7805 supply a 5V output voltage to LM311N comparator. Then LM1117-3.3 will take 5V input and geenrate 3.3V to trimpot to set a voltage reference at the inverting pin of comparator.  
 
 The **SCR**, silicon controlled rectifier, is to act as a memory or latching component. Whenever there is a over current or voltage happen on the *current sense resistor* or *load* respectively, it will triggered the SCR and pull the voltage at **OCP** and **OVP** until is it reset. The LED is a indicator to indicates the SCR is triggered.  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/scr%20ocp.png" width="220"><img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/scr%20ovp.png" width="220">  
+
 To **reset** SCR  
 -remove power supply for SCR,stop the current flowing through SCR  
 -give negative voltage on the gate  
-When SCR is triggered here means that the circuit is at risk of damage,either over current on the primary side or over voltage on the load, we want the driver to stop immediately before any further damage on the system. So to do that, we connect the OCP and OVP to a NAND gate, output of NAND gate is connected to the SD(shutdown) pin on the IR2113 to stop the system.
+When SCR is triggered here means that the circuit is at risk of damage,either over current on the primary side or over voltage on the load, we want the driver to stop immediately before any further damage on the system. So to do that, we connect the OCP and OVP to a NAND gate, output of NAND gate is connected to the SD(shutdown) pin on the IR2113 to stop the system.  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/Nand%20gate%20to%20SD.png" width="220">  
 
 ### <a name = ocp></a> Over Current Protection 
-R8 resistor (in figure 0) is the **current sense resistor**, this resistor is to constantly watch the amount of current in the system. Usually having very small resistance, below 1Ohm. To make sure the current does not exceed and damage the transistors, **over protection circuit** is introduced.  
+R8 resistor (in figure 1) is the **current sense resistor**, this resistor is to constantly watch the amount of current in the system. Usually having very small resistance, below 1Ohm. To make sure the current does not exceed and damage the transistors, **over protection circuit** is introduced.  
 ![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/over%20protection%20circuit.png)  
 <div align="center">
   Figure 4. Schematic of Over Current Protection on current sense resistor
 </div>  
 
+```
+Vsense = I x Rsense
+I : Current flowing in the primary side,(A)
+```  
 
+The comparator non-inverting input(+) voltage  is comparing with the Vref at the inverting input(-),which is controlled by the trimpot.   
+When V(+) > V(-) : Vout=5V, SCR trigger  
+When V(+) < V(-) : Vout=0V, SCR is not trigger  
+
+### <a name = ovp></a> Over Voltage Protection 
+R1 resistor (in figure 0) is the **load**, this load is to constantly to have a fixed voltage,here we limit it to 50V. To make sure the voltage does not exceed and damage the load, **over voltage circuit** is introduced.  
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/over%20voltage%20protection.png)  
+<div align="center">
+  Figure 5. Schematic of Over Voltage Protection on load
+</div>  
+
+The comparator non-inverting input(+) voltage  is comparing with the Vref at the inverting input(-),which is controlled by the trimpot.   
+When V(+) > V(-) : Vout=5V, SCR trigger  
+When V(+) < V(-) : Vout=0V, SCR is not trigger  
 
 
 
