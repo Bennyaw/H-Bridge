@@ -4,7 +4,11 @@ This repository is a project about **SMPS H-Bridge DC-DC converter**, it is goin
 The overall system works as the block diagram shows below. The microcontroller is to generate pulse to MOSFET driver to switch the MOSFET in H-Bridge during the operation. Feedback circuit is always watching the load voltage and current and feedback status to microcontroller, if any over-voltage or over-current condition occurs, the microcontroller immediately compensate the pulse proper operating load voltage or current.
 ![h-bridge block diagram](https://github.com/Bennyaw/H-Bridge/blob/master/images/h%20bridge%20block%20diagram.png)  
 
+Table of Content
+================
+1. [Requirement](#req)  
 
+# <a name = req></a> Requirement  
 Software
 --------
 -STM32CubeMX  
@@ -28,7 +32,12 @@ Equipmemt
 
 Introduction
 ============
-H-Bridge is a DC-DC converter topology which has four switching components in the system, which here are N-Channel MOSFETs, across a transformer. During the operation, a pair of MOSFETs is switched on 1 side of the driver at the same time.
+H-Bridge is a DC-DC converter topology which has four switching components in the system, which here are N-Channel MOSFETs, across a transformer. During the operation, a pair of MOSFETs is switched on 1 side of the driver at the same time.  
+When "a pair of MOSFETs is switched" means that either 1 MOSFET is turn **OFF** and another 1 is **ON**, from the schmatic below, M1, M2 is a pair and drove by 1 MOSFET Driver, M3,M4 will be another one.
+The arrow shows how the current go through the MOSFET during the operation.
+In order let current flow, either M1 M4 turn **ON** , or either M2 M3 turn **ON**.  
+![](https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/4%20mosfets.PNG)
+
 
 
 
