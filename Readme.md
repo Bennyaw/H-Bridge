@@ -121,15 +121,27 @@ Both the microcontroller is using the same ARM processor, but blue pill has the 
 1. Find the swd pins on the smart v2.  
 <img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/connection%20between%20blue%20pill%20and%20smart%20v2.jpg" width="500">  
 
-2. Connections between blue pill and smart V2  
+2. Constructs the connections between blue pill and smart V2 as below diagram  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/blue%20pill%20to%20smart%20v2.jpg" width="270">  
 
-3. Plug in USB cable to blue pill. Make sure both the MCU have sufficient voltage power supply.  
+3. Plug in USB cable to blue pill. Make sure both the MCU have sufficient voltage power supply.   
 4. Run simple program to test whether is working or not.  
 
+### <a name = deadtime></a> DeadTime Insertion  
+Dead time is the time frame that both complementary signals is low. These signals are usually used to switch **ON** and **OFF** transistors like MOSFETs. Signal high, transistor **ON**, signal low, transistor **OFF**. In H-bridge here, we do not want to have both transistors to turn ON at the same time on the same driver, this will cause a very large current to shoot through both transistor and deals damage to the whole system. Even though MOSFET has a fast switching characteristic, but it is still not enough to prevent shoot through condition. So deadtime is to make sure that 1 transistor fully turn OFF before another transistor turns ON.  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/deadtime%20datasheet.PNG" width="330">  
+
+To configure it, just follow the equation provided by the [datasheet](https://www.st.com/content/ccc/resource/technical/document/reference_manual/59/b9/ba/7f/11/af/43/d5/CD00171190.pdf/files/CD00171190.pdf/jcr:content/translations/en.CD00171190.pdf) in STM32F103C8T6.  
+These 8 bits is the configuration for the duration of the deadtime. It is ***only available in Advanced Timer, which is Timer1 and Timer8***, located inside ***BDTR register***.  
+<img src ="https://github.com/Bennyaw/H-Bridge/blob/Bennyaw-readme/images/dtgbits.PNG" width="435">  
 
 
+## Will be adding in future  
+-Timer1 configurations  
+-timer1 output waveform result  
+-discuss DMA request  
 
-
+ 
 
 
 
@@ -157,3 +169,5 @@ https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e
 https://www.infineon.com/dgdl/Infineon-HV_Floating_MOS_Gate_Drivers-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c47de609d140a&redirId=114085  
 [6] J-LINK,  
 https://docs.platformio.org/en/latest/plus/debug-tools/jlink.html
+[7] RM0008,
+https://www.st.com/content/ccc/resource/technical/document/reference_manual/59/b9/ba/7f/11/af/43/d5/CD00171190.pdf/files/CD00171190.pdf/jcr:content/translations/en.CD00171190.pdf
