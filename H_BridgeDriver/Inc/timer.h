@@ -87,5 +87,6 @@ int apb2_clk_int_period(void);
 int getdtgMultiplier(uint32_t deadTime_ns,int period_clk_base);
 int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base);
 int setDeadTime(uint32_t deadTime_ns);
+void timer_Init(void);
 
 #endif /* __TIMER_H__ */

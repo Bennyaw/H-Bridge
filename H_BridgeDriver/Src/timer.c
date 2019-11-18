@@ -3,8 +3,21 @@
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
 #include <math.h>
+extern int ARR_VAL;
+extern int PSC_VAL;
+extern TIM_HandleTypeDef htim1;
 
 
+void timer_Init(void){
+
+	  clearTimerUIF(htim1);
+	  htim1.Instance->ARR = ARR_VAL;
+	  htim1.Instance->PSC = PSC_VAL-1;
+	  htim1.Instance->CR1 |= arr_preload_en;
+
+	  htim1.Instance->CCMR1 |= TOGGLE<<4;
+	  htim1.Instance->CCMR2 |= TOGGLE<<4;
+}
 
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal){
 

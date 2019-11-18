@@ -70,9 +70,10 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE BEGIN 0 */
 
-#define ARR_VAL 1000
-#define PSC_VAL 8
-
+int ARR_VAL=1000;
+int PSC_VAL=8;
+uint16_t bufferCCR1[2] = {350,100};
+uint16_t bufferCCR3[2] = {575,550};
 
 /* USER CODE END 0 */
 
@@ -108,41 +109,25 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t bufferCCR1[2] = {350,100};
-  uint16_t bufferCCR3[2] = {575,550};
 
   //volatile int *dummy =  &(bufferCCR1[1]);
 
   htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
   htim1.Instance->BDTR |= setDeadTime(2500);
 
-  clearTimerUIF(htim1);
-  htim1.Instance->ARR = ARR_VAL;
-  htim1.Instance->PSC = PSC_VAL-1;
-  //dutyCycleInit(&htim1,channel_1,ARR_VAL);//set it to default 50% duty cycle
-  //dutyCycleInit(&htim1,channel_2,ARR_VAL);
-  htim1.Instance->CR1 |= arr_preload_en;
-
-  //htim1.Instance->CCER|= CC11P_AC_LOW;
-  //htim1.Instance->CCER|= CC13P_AC_LOW;
-  //htim1.Instance->CCER|= CC11PN_AC_LOW;
-  //htim1.Instance->CCER|= CC13PN_AC_LOW;
+  timer_Init();
+  dma_Init();
 
   htim1.Instance->CNT = ARR_VAL-1;
   setTimerCCRVal(&htim1,channel_1,0);
   setTimerCCRVal(&htim1,channel_3,0);
 
 
-  htim1.Instance->CCMR1 |= TOGGLE<<4;
-  htim1.Instance->CCMR2 |= TOGGLE<<4;
-
   hdma_tim1_ch1.Instance->CPAR = timer1CCR1Address;
   hdma_tim1_ch1.Instance->CMAR = (uint32_t)&(bufferCCR1);
   hdma_tim1_ch3.Instance->CPAR = timer1CCR3Address;
   hdma_tim1_ch3.Instance->CMAR = (uint32_t)&(bufferCCR3);
 
-  hdma_tim1_ch1.Instance->CNDTR = 2;
-  hdma_tim1_ch3.Instance->CNDTR = 2;
   //hdma_tim1_ch1.DmaBaseAddress->IFCR
 
   hdma_tim1_ch1.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 1

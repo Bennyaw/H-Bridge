@@ -13,4 +13,6 @@
 
 #define channel_enable	1<<0
 
+void dma_Init(void);
+
 #endif /* __DMA_H__ */
