@@ -78,7 +78,7 @@
 - :test: test_getCRRVal_ARR_is_1000_and_dutyCycle_percent_is_30_return_300
   :line: 251
   :message: ''
-- :test: test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_0_expect_new_CCRVal_is_300
+- :test: test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_100_expect_new_CCRVal_is_400
   :line: 264
   :message: ''
 :failures: []
@@ -89,4 +89,4 @@
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.07217113795923069
+:time: 0.34532127900001797

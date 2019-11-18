@@ -19,7 +19,7 @@ void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCom
 
 }
 
-int apb2_clk_int_period(void){
+float apb2_clk_int_period(void){
 	float period;
 	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1))//apb2 freq is not divided
 		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
@@ -76,7 +76,7 @@ int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base){
 
 
 int setDeadTime(uint32_t deadTime_ns){
-	int period_clk_base = apb2_clk_int_period();
+	float period_clk_base = apb2_clk_int_period();
 
 	uint8_t dtgMultiplier = (uint8_t)getdtgMultiplier(deadTime_ns,period_clk_base);
 	uint8_t dtgVal = (uint8_t)getdtgBitsVal(deadTime_ns , period_clk_base);

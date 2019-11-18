@@ -70,10 +70,13 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE BEGIN 0 */
 
+
 int ARR_VAL=1000;
 int PSC_VAL=8;
 uint16_t bufferCCR1[2] = {350,100};
 uint16_t bufferCCR3[2] = {575,550};
+
+
 
 /* USER CODE END 0 */
 
@@ -112,35 +115,38 @@ int main(void)
 
   //volatile int *dummy =  &(bufferCCR1[1]);
 
-  htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= setDeadTime(2500);
-
   timer_Init();
   dma_Init();
 
-  htim1.Instance->CNT = ARR_VAL-1;
+
+  htim1.Instance->CNT = 0;
   setTimerCCRVal(&htim1,channel_1,0);
   setTimerCCRVal(&htim1,channel_3,0);
 
 
-  hdma_tim1_ch1.Instance->CPAR = timer1CCR1Address;
-  hdma_tim1_ch1.Instance->CMAR = (uint32_t)&(bufferCCR1);
-  hdma_tim1_ch3.Instance->CPAR = timer1CCR3Address;
-  hdma_tim1_ch3.Instance->CMAR = (uint32_t)&(bufferCCR3);
+
 
   //hdma_tim1_ch1.DmaBaseAddress->IFCR
 
+  htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
+  htim1.Instance->BDTR |= setDeadTime(250);
+
+  //clearTimerUIF(htim1);
+  htim1.Instance->ARR = ARR_VAL;
+  htim1.Instance->PSC = PSC_VAL-1;
+
+
   hdma_tim1_ch1.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 1
   hdma_tim1_ch3.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 3
-  htim1.Instance->DIER |= dma_ccr1_request_en;	//Enable Capture Compare 1 DMA request
-  htim1.Instance->DIER |= dma_ccr3_request_en;	//Enable Capture Compare 3 DMA request
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
   htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_EN;//Enable timer1 chn3 complementary output compare
+
   htim1.Instance->BDTR |= MOE_EN;
   htim1.Instance->CR1 |= CNT_EN;
+  htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
 
 
   /* USER CODE END 2 */

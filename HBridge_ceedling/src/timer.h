@@ -13,7 +13,11 @@ enum deadTimeMultiplier{
 	periodMultiplier_16 = 16
 };
 
-int clk_int_peiord(void);
+#define ARR_VAL 1000
+#define PSC_VAL 8
+
+
+float clk_int_peiord(void);
 int getdtgMultiplier(uint32_t deadTime_ns,int period_clk_base);
 int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base);
 int setDeadTime(uint32_t deadTime_ns);

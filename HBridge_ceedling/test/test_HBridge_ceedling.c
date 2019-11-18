@@ -268,3 +268,9 @@ void test_getNewCCRVAl_ARR_is_1000_input_dutyCycleRange_300_prev_CCRVal_100_expe
 
   TEST_ASSERT_EQUAL(400,result);
 }
+
+void test_calculateRiseEdgeVal(){
+  float period_ns = 10000;
+
+
+}
