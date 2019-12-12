@@ -71,10 +71,10 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* USER CODE BEGIN 0 */
 
 
-int ARR_VAL=1000;
-int PSC_VAL=8;
-uint16_t bufferCCR1[2] = {350,100};
-uint16_t bufferCCR3[2] = {575,550};
+int ARR_VAL;
+int PSC_VAL;
+uint16_t bufferCCR1[2] = {300,100};
+uint16_t bufferCCR3[2] = {650,550};
 
 
 
@@ -118,26 +118,20 @@ int main(void)
   timer_Init();
   dma_Init();
 
-
-  htim1.Instance->CNT = 0;
+  setCounterValue(0);
   setTimerCCRVal(&htim1,channel_1,0);
   setTimerCCRVal(&htim1,channel_3,0);
 
+  reset_deadtime_dtg_bits();
+  setDeadTime_ns(100);
 
+  setPrescalerValue(4);//APB2 CLK frequency is 32MHz. Please double check again.
+  setTimerOutputFrequency_Hz(8*kHz);
+  setTimer1Chn1_OutputDutyCycle(50);
+  setTimer1Chn3_OutputDutyCycle(30);
 
-
-  //hdma_tim1_ch1.DmaBaseAddress->IFCR
-
-  htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= setDeadTime(250);
-
-  //clearTimerUIF(htim1);
-  htim1.Instance->ARR = ARR_VAL;
-  htim1.Instance->PSC = PSC_VAL-1;
-
-
-  hdma_tim1_ch1.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 1
-  hdma_tim1_ch3.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 3
+  Enable_dma_timer1Ch1();//Enable dma timer 1 channel 1
+  Enable_dma_timer1Ch3();//Enable dma timer 1 channel 3
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare

@@ -6,17 +6,19 @@
 extern int ARR_VAL;
 extern int PSC_VAL;
 extern TIM_HandleTypeDef htim1;
-
+extern uint16_t bufferCCR1[2];
+extern uint16_t bufferCCR3[2];
 
 void timer_Init(void){
 
-	  clearTimerUIF(htim1);
-	  htim1.Instance->ARR = ARR_VAL;
-	  htim1.Instance->PSC = PSC_VAL-1;
-	  htim1.Instance->CR1 |= arr_preload_en;
+	htim1.Instance->CR1 |= arr_preload_en;
+	clearTimerUIF(htim1);
+	setARRValue(0);
+	setPrescalerValue(1);
 
-	  htim1.Instance->CCMR1 |= TOGGLE<<4;
-	  htim1.Instance->CCMR2 |= TOGGLE<<4;
+
+	htim1.Instance->CCMR1 |= TOGGLE<<4;
+	htim1.Instance->CCMR2 |= TOGGLE<<4;
 }
 
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal){
@@ -88,13 +90,14 @@ int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base){
 }
 
 
-int setDeadTime(uint32_t deadTime_ns){
+void setDeadTime_ns(uint32_t deadTime_ns){
 	float period_clk_base = apb2_clk_int_period();
 
 	uint8_t dtgMultiplier = (uint8_t)getdtgMultiplier(deadTime_ns,period_clk_base);
 	uint8_t dtgVal = (uint8_t)getdtgBitsVal(deadTime_ns , period_clk_base);
 
-	return  dtgMultiplier|dtgVal;
+	htim1.Instance->BDTR |= dtgMultiplier|dtgVal;
+
 }
 /**
  * This function initialize the duty cycle to 50%, which ccr = arr/2
@@ -103,6 +106,52 @@ void dutyCycleInit(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t arr_val){
 	setTimerCCRVal(timer,channel,arr_val/2);
 };
 
+
+void setTimerOutputFrequency_Hz(float out_freq_Hz){
+//need to check prescaler val
+	uint16_t arrVal=0;
+	int prescaler=getPrescalerValue();
+	do{
+		float prescaled_pclk2_period = apb2_clk_int_period()*prescaler;
+		float outFreq_period = (float)1/out_freq_Hz;
+		float pclk2_period_ns = prescaled_pclk2_period*((float)1/(float)(pow(10,9)));
+		arrVal = outFreq_period/pclk2_period_ns;
+		if(arrVal<=0 || arrVal<1000 )
+			prescaler--;
+	}while(arrVal<=0 || arrVal<1000);
+
+	setARRValue(arrVal);
+}
+
+void setBufferValChn1(int riseEdge,int fallEdge){
+	bufferCCR1[0] = fallEdge;
+	bufferCCR1[1] = riseEdge;
+}
+
+void setBufferValChn3(int riseEdge,int fallEdge){
+	bufferCCR3[0] = fallEdge;
+	bufferCCR3[1] = riseEdge;
+}
+
+void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle){
+	int riseEdge,fallEdge;
+	//int prescaler = getPrescalerValue();
+	volatile int arrVal = getARRValue();
+	int edgeInterval= (dutyCycle/100)*arrVal;
+	riseEdge = (arrVal*0.05);
+	fallEdge = riseEdge+edgeInterval;
+	setBufferValChn1(riseEdge,fallEdge);
+}
+
+void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle){
+	int riseEdge,fallEdge;
+	//int prescaler = getPrescalerValue();
+	volatile int arrVal = getARRValue();
+	int edgeInterval= (dutyCycle/100)*arrVal;
+	riseEdge = (arrVal*0.05);
+	fallEdge = riseEdge+edgeInterval;
+	setBufferValChn3(riseEdge,fallEdge);
+}
 
 void setCHN1DutyCycle(TIM_TypeDef *timer,dutyCycle dutyCycle,uint8_t dutyCycle_percent){
 
