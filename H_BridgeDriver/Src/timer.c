@@ -3,11 +3,23 @@
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
 #include <math.h>
-extern int ARR_VAL;
-extern int PSC_VAL;
+
 extern TIM_HandleTypeDef htim1;
 extern uint16_t bufferCCR1[2];
 extern uint16_t bufferCCR3[2];
+double offset;
+int edgeIntervalChn1;
+int edgeIntervalChn3;
+
+#define getChn1RiseEdge()	bufferCCR1[1]
+#define getChn1FallEdge()	bufferCCR1[0]
+#define getChn3RiseEdge()	bufferCCR3[1]
+#define getChn3FallEdge()	bufferCCR3[0]
+
+#define setChn1RiseEdge(val)	bufferCCR1[1]=val
+#define setChn1FallEdge(val)	bufferCCR1[0]=val
+#define setChn3RiseEdge(val)	bufferCCR3[1]=val
+#define setChn3FallEdge(val)	bufferCCR3[0]=val
 
 void timer_Init(void){
 
@@ -124,52 +136,36 @@ void setTimerOutputFrequency_Hz(float out_freq_Hz){
 }
 
 void setBufferValChn1(int riseEdge,int fallEdge){
-	bufferCCR1[0] = fallEdge;
-	bufferCCR1[1] = riseEdge;
+	setChn1RiseEdge(riseEdge);
+	setChn1FallEdge(fallEdge);
 }
 
 void setBufferValChn3(int riseEdge,int fallEdge){
-	bufferCCR3[0] = fallEdge;
-	bufferCCR3[1] = riseEdge;
+	setChn3RiseEdge(riseEdge);
+	setChn3FallEdge(fallEdge);
 }
 
-void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle){
+void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle_percent){
 	int riseEdge,fallEdge;
-	//int prescaler = getPrescalerValue();
 	volatile int arrVal = getARRValue();
-	int edgeInterval= (dutyCycle/100)*arrVal;
+	edgeIntervalChn1= (dutyCycle_percent/100)*arrVal;
 	riseEdge = (arrVal*0.05);
-	fallEdge = riseEdge+edgeInterval;
+	fallEdge = riseEdge+edgeIntervalChn1;
 	setBufferValChn1(riseEdge,fallEdge);
 }
 
-void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle){
+void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle_percent){
 	int riseEdge,fallEdge;
-	//int prescaler = getPrescalerValue();
 	volatile int arrVal = getARRValue();
-	int edgeInterval= (dutyCycle/100)*arrVal;
+	edgeIntervalChn3= (dutyCycle_percent/100)*arrVal;
 	riseEdge = (arrVal*0.05);
-	fallEdge = riseEdge+edgeInterval;
+	fallEdge = riseEdge+edgeIntervalChn3;
 	setBufferValChn3(riseEdge,fallEdge);
 }
 
-void setCHN1DutyCycle(TIM_TypeDef *timer,dutyCycle dutyCycle,uint8_t dutyCycle_percent){
-
-	uint16_t arr_val = timer->ARR;
-	uint32_t outPeriod = arr_val*2;
-	uint16_t crr_Val = timer->CCR1;
-	int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
-	int shiftVal=0;
-	/*
-	switch(dutyCycle.mode){
-	case shiftRisingEdge:
-		if(dutyCycle_percent < 50){
-			//shiftVal =
-						}
-
-	}
-*/
-
-
-
+void setOffSet(volatile double offset_percent){
+	uint32_t offsetVal = (offset_percent/100)*edgeIntervalChn1;
+	uint16_t riseVal = getChn3RiseEdge();
+	uint16_t fallVal = getChn3FallEdge();
+	setBufferValChn3((riseVal+offsetVal),(fallVal+offsetVal));
 }

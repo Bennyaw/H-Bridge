@@ -129,6 +129,7 @@ int main(void)
   setTimerOutputFrequency_Hz(8*kHz);
   setTimer1Chn1_OutputDutyCycle(50);
   setTimer1Chn3_OutputDutyCycle(30);
+  setOffSet(50);//set the duty cycle of the signal first, then only setOffset.
 
   Enable_dma_timer1Ch1();//Enable dma timer 1 channel 1
   Enable_dma_timer1Ch3();//Enable dma timer 1 channel 3
@@ -138,8 +139,8 @@ int main(void)
   htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_EN;//Enable timer1 chn3 complementary output compare
 
-  htim1.Instance->BDTR |= MOE_EN;
-  htim1.Instance->CR1 |= CNT_EN;
+  htim1.Instance->BDTR |= MOE_EN;//Main output enable
+  htim1.Instance->CR1 |= CNT_EN;//counter enable
   htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
 
 

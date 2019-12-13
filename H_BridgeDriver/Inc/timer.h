@@ -108,4 +108,5 @@ void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle);
 void setBufferValChn3(int riseEdge,int fallEdge);
 void setBufferValChn1(int riseEdge,int fallEdge);
 void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle);
+void setOffSet(volatile double offset_percent);
 #endif /* __TIMER_H__ */
