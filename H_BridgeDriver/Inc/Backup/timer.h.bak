@@ -26,6 +26,10 @@ enum deadTimeMultiplier{
 	periodMultiplier_16 = 16
 };
 
+
+#define kHz				1000
+#define MHz				1000000
+
 #define timer1CCR1Address 0x40012C34
 #define timer1CCR2Address 0x40012C38
 #define timer1CCR3Address 0x40012C3C
@@ -81,12 +85,29 @@ enum deadTimeMultiplier{
 #define dma_ccr3_interrupt_en 1<<3
 
 #define clearTimerUIF(htim1)				htim1.Instance->SR &= 0<<0
+#define Enable_dma_timer1Ch1()				hdma_tim1_ch1.Instance->CCR |= channel_enable
+#define Enable_dma_timer1Ch3()				hdma_tim1_ch3.Instance->CCR |= channel_enable
+#define reset_deadtime_dtg_bits()			htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
+
+#define setCounterValue(val)				htim1.Instance->CNT = val
+#define setARRValue(val)					htim1.Instance->ARR = val
+#define setPrescalerValue(val)				htim1.Instance->PSC = val-1
+
+#define getPrescalerValue()					(htim1.Instance->PSC)+1
+#define getARRValue()						htim1.Instance->ARR
 
 void dutyCycleInit(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t arr_val);
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal);
 float apb2_clk_int_period(void);
 int getdtgMultiplier(uint32_t deadTime_ns,int period_clk_base);
 int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base);
-int setDeadTime(uint32_t deadTime_ns);
-
+void setDeadTime_ns(uint32_t deadTime_ns);
+void timer_Init(void);
+void setTimerOutputFrequency_Hz(float out_freq_Hz);
+void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle);
+void setBufferValChn3(int riseEdge,int fallEdge);
+void setBufferValChn1(int riseEdge,int fallEdge);
+void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle);
+void setOffSet(volatile double offset_percent);
+int getApb2_divider(void);
 #endif /* __TIMER_H__ */

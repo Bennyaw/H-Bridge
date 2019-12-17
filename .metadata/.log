@@ -4209,3 +4209,3303 @@ java.lang.NullPointerException
 !MESSAGE An exception occurred while dispatching debug events.
 !STACK 0
 java.lang.NullPointerException
+!SESSION 2019-12-17 17:34:47.119 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product file:/C:/Students/Bennyaw/SMPS/H-Bridge/H_BridgeDriver/.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product file:/C:/Students/Bennyaw/SMPS/H-Bridge/H_BridgeDriver/.cproject
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-17 17:35:05.489
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.275
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.385
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.395
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.395
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.415
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.415
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.435
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.445
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.455
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.455
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.465
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.475
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.475
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.485
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.485
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.505
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.505
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.515
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.525
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.525
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.535
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.565
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.585
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.585
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.595
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.605
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.615
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.615
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.625
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.625
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.645
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.645
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.655
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.665
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.675
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.675
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.685
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.685
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.695
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.695
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.705
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.715
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.715
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.725
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.735
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.735
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.735
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.745
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.755
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.755
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.765
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.765
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.775
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.775
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.785
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.785
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.795
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.795
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.805
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.815
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.815
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.825
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.825
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.825
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.835
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.835
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.845
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.845
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.855
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.865
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.865
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.875
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.875
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.885
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.895
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.895
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.905
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.915
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.915
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.925
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.925
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.935
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.935
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.945
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.945
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.955
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.965
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.965
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.975
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.975
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.975
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.985
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.995
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:10.995
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.005
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.005
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.015
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.015
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.025
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.025
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.035
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.035
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.045
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.045
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.045
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.055
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.055
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.065
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.075
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.085
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.085
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.095
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.105
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.105
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.115
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.115
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.125
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.135
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.135
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.145
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.145
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.155
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.165
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.165
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.175
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.175
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.175
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.185
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.195
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.195
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.205
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.205
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.205
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.215
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.215
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.225
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.225
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.235
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.235
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.245
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.245
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.255
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.255
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.265
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.265
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.275
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.285
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.295
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.295
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.305
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.305
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.315
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.325
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.325
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.335
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.345
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.345
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.365
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.525
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.535
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.545
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.555
+!MESSAGE Error
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 17:35:11.555
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.575
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.605
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.645
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.695
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.705
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.715
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.745
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.775
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.785
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.795
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.805
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.815
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.835
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.845
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.875
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.905
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.905
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.915
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.915
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.925
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.935
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.945
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.945
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.955
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.965
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.965
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.975
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.985
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.985
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:11.995
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.005
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.015
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.015
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.025
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.065
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.075
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.075
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.085
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.095
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.095
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.105
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.115
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.125
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.125
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.135
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.145
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.865
+!MESSAGE Error
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-17 17:35:12.925
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:12.955
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:13.035
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:13.685
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.485
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.552
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.569
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.579
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.642
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.649
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.655
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.666
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.674
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.679
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.684
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.689
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.694
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.701
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.707
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.729
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.735
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.742
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.747
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.753
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.758
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.763
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.768
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.773
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.778
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.783
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.787
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.791
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.795
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.799
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.803
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.808
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.812
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.816
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.820
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.824
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.828
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.833
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.837
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.842
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.846
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.850
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.854
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.860
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.864
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.869
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.875
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.879
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.884
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.888
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.893
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.898
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.903
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.909
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.914
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.918
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.923
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.928
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.932
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.938
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.943
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.947
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.951
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.955
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.959
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.963
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.968
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.972
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:14.976
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.021
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.026
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.031
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.036
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.041
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.046
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.052
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.056
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.061
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.067
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.072
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.077
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.082
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.086
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.091
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.095
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.100
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.104
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.108
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.112
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.116
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.120
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.124
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.129
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.133
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.137
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.141
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.145
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.149
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.153
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.157
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.160
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.164
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.168
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.172
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.176
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.180
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.184
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.188
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.192
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.196
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.200
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.204
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.207
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.211
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.215
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.219
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.223
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.227
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.232
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.236
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.240
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.244
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.249
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.287
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.292
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.296
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.301
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.305
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.310
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.315
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.320
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.324
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.328
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.334
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.339
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.345
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.350
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.355
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.361
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.368
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.374
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.380
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.387
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.394
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.399
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.405
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.410
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.415
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.420
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.425
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.430
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.436
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.441
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.446
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.453
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.458
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.463
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.470
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.475
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.480
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.485
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.490
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.499
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.505
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.509
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.514
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.519
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.572
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.580
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.588
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.595
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.603
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.611
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.617
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.642
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.663
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.670
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.676
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.684
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.690
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.696
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.705
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.714
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.722
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.730
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.737
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.744
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.751
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.765
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.778
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.866
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:15.921
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.003
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.021
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.039
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.045
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.052
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.070
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.082
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.089
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.097
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.105
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.112
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.119
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.126
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.134
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.142
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.150
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.156
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.165
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.171
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:16.179
+!MESSAGE Error
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-12-17 17:35:18.138
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+!SESSION 2019-12-17 17:35:35.512 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product file:/C:/Students/Bennyaw/SMPS/H-Bridge/H_BridgeDriver/.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product file:/C:/Students/Bennyaw/SMPS/H-Bridge/H_BridgeDriver/.cproject
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 17:35:52.540
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.950
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.950
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.960
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.980
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.990
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:52.990
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.000
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.010
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.020
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.030
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.040
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.050
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.050
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.060
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.070
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.070
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.080
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.080
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.090
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.090
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.100
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.100
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.110
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.110
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.120
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.120
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.130
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.130
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.140
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.140
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.150
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.150
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.150
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.160
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.160
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.170
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.170
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.180
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.180
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.190
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.190
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.200
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.200
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.200
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.210
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.210
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.220
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.220
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.230
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.230
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.240
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.240
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.240
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.250
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.250
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.260
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.260
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.270
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.270
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.270
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.280
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.280
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.290
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.290
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.290
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.300
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.300
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.310
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.310
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.310
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.320
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.320
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.330
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.330
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.340
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.340
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.340
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.350
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.350
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.360
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.360
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.370
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.370
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.370
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.380
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.380
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.390
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.390
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.400
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.400
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.400
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.410
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.410
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.420
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.420
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.420
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.430
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.430
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.440
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.440
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.450
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.450
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.460
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.460
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.470
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.480
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.500
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.520
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.530
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.550
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.550
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.560
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.570
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.580
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.580
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.590
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.600
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.610
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.610
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.620
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.620
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.630
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.640
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.640
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.650
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.650
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.660
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.660
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.670
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.670
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.680
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.680
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.690
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.700
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.700
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.710
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.720
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.730
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.730
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.740
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.750
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.750
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.760
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.770
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.770
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.780
+!MESSAGE Error
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-17 17:35:53.800
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.810
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.820
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.830
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.840
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.850
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.850
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.860
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.870
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.880
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.900
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.910
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.920
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.930
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.940
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.940
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.980
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:53.990
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.000
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.028
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.041
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.041
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.051
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.061
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.081
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.200
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.212
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.222
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.232
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.242
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.253
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.263
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.271
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.273
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.283
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.293
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.301
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.303
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.313
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.321
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.323
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.333
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.333
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.343
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.351
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.353
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.362
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.364
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.374
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.382
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.384
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.394
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.404
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.412
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.414
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.424
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.432
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.434
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.444
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.454
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.454
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.464
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.474
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.482
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.484
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:35:54.505
+!MESSAGE Error
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-12-17 17:35:57.688
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:13.281
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:31.701
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.348
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.361
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.368
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.374
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.380
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.386
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.391
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.399
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.405
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.410
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.414
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.420
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.424
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.431
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.437
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.442
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.447
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.452
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.458
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.463
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.468
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.473
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.478
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.482
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.488
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.493
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.498
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.503
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.509
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.514
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.518
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.522
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.527
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.531
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.537
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.542
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.547
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.552
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.558
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.562
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.566
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.571
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.575
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.580
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.585
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.590
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.594
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.599
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.603
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.608
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.612
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.616
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.620
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.624
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.627
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.632
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.637
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.642
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.646
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.651
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.655
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.659
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.664
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.668
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.673
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.677
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.681
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.685
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.688
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.692
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.696
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.700
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.704
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.707
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.711
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.715
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.719
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.723
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.727
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.733
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.737
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.742
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.746
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.750
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.754
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.758
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.763
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.767
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.771
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.775
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.779
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.783
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.786
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.790
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.794
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.798
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.801
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.805
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.809
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.813
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.818
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.822
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.827
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.833
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.837
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.843
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.849
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.855
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.863
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.870
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.877
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.885
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.983
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.990
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:32.996
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.000
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.006
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.013
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.019
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.025
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.030
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.036
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.042
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.063
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.075
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.087
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.099
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.108
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.118
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.127
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.136
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.145
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.154
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.162
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.169
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.176
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.183
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.189
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.194
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.199
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.204
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.209
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.213
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.218
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.222
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.227
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.231
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.236
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.243
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.248
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.252
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.257
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.262
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.266
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.271
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.275
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.280
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.285
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.289
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.294
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.301
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.306
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.311
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.316
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.320
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.326
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.331
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.336
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.341
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.345
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.350
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.355
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.359
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.364
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.368
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.372
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.376
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.381
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.386
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.390
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.396
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.400
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.405
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.410
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.415
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.419
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.423
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.427
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.431
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.435
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.439
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.443
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.448
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.452
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.457
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.462
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.468
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.473
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.477
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.481
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.485
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.490
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.494
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.499
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.504
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.509
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.514
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.519
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.524
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.529
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.533
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.537
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:33.541
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.643
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.652
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.658
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.663
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.667
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.675
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.679
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.683
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.687
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.691
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.695
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-17 17:36:42.699
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-17 17:37:14.703
+!MESSAGE Indexed 'H_BridgeDriver' (18 sources, 86 headers) in 1.92 sec: 7,676 declarations; 27,058 references; 0 unresolved inclusions; 75 syntax errors; 54 unresolved names (0.16%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-17 17:37:26.062
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-17 17:37:26.068
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 17:44:33.247
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 17:44:33.257
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 17:52:59.394
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 17:52:59.402
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:04:42.142
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: No error.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Remote communication error.  Target disconnected.: No error.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:04:42.142
+!MESSAGE Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: No error.
+!STACK 0
+java.lang.Exception: Remote communication error.  Target disconnected.: No error.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:07:24.558
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:07:24.566
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:07:54.582
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:07:54.590
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:19:59.638
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:19:59.647
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:34:37.455
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:34:37.456
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:34:48.399
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:34:48.407
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:34:48.415
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:34:48.415
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:34:56.439
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:34:56.446
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:34:56.453
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:34:56.454
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:35:14.316
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:35:14.317
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2019-12-17 18:35:31.820
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-12-17 18:35:31.820
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 18:36:54.747
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 18:36:54.755
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 22:23:57.049
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 22:23:57.124
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-17 23:20:46.552
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-17 23:20:46.562
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:269)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:170)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBSessionTranslator.readMemory(GDBSessionTranslator.java:180)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.readMemory(GDBEventListener.java:66)
+	at fr.ac6.mcu.debug.ui.views.periphRegister.PeriphRegisterTreeRegister.readValue(PeriphRegisterTreeRegister.java:164)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1130)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.updateTreeFields(IORegisterView.java:1135)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.IORegisterView.gdbSuspendListener(IORegisterView.java:1166)
+	at fr.ac6.mcu.debug.ui.views.periphRegisterView.GDBEventListener.handleDebugEvents(GDBEventListener.java:118)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

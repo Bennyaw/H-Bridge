@@ -1,0 +1,29 @@
+#ifndef __RCC_H__
+#define __RCC_H__
+
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32f1xx_hal.h"
+#include "timer.h"
+#include "Common.h"
+
+typedef struct RCCRegs RCCRegs;//RCC
+
+struct RCCRegs{
+	RCCRegister Cr;						// 0x00
+	RCCRegister Cfgr;					// 0x04
+	RCCRegister Cir;					// 0x08
+	RCCRegister Apb2rstr;				// 0x0c
+	RCCRegister Apb1rstr;				// 0x10
+	RCCRegister Ahbenr;					// 0x14
+	RCCRegister Apb2enr;				// 0x18
+	RCCRegister Apb1enr;				// 0x1c
+	RCCRegister Bdcr;					// 0x20
+	RCCRegister Csr;					// 0x24
+};
+
+#define Rcc ((RCCRegs*)0x40021000)
+
+#define apb2dividerMask 		0x00003800
+
+#endif /* __RCC_H__ */

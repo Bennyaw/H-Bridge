@@ -71,10 +71,10 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* USER CODE BEGIN 0 */
 
 
-int ARR_VAL=1000;
-int PSC_VAL=8;
-uint16_t bufferCCR1[2] = {350,100};
-uint16_t bufferCCR3[2] = {575,550};
+int ARR_VAL;
+int PSC_VAL;
+uint16_t bufferCCR1[2] = {300,100};
+uint16_t bufferCCR3[2] = {650,550};
 
 
 
@@ -118,34 +118,29 @@ int main(void)
   timer_Init();
   dma_Init();
 
-
-  htim1.Instance->CNT = 0;
+  setCounterValue(0);
   setTimerCCRVal(&htim1,channel_1,0);
   setTimerCCRVal(&htim1,channel_3,0);
 
+  reset_deadtime_dtg_bits();
+  setDeadTime_ns(100);
 
+  setPrescalerValue(4);//APB2 CLK frequency is 32MHz. Please double check again.
+  setTimerOutputFrequency_Hz(80*kHz);
+  setTimer1Chn1_OutputDutyCycle(50);
+  setTimer1Chn3_OutputDutyCycle(50);
+  setOffSet(50);//set the duty cycle of the signal first, then only setOffset.
 
-
-  //hdma_tim1_ch1.DmaBaseAddress->IFCR
-
-  htim1.Instance->BDTR &= ~0xff;//reset dtg bits,DTG[7:0]
-  htim1.Instance->BDTR |= setDeadTime(250);
-
-  //clearTimerUIF(htim1);
-  htim1.Instance->ARR = ARR_VAL;
-  htim1.Instance->PSC = PSC_VAL-1;
-
-
-  hdma_tim1_ch1.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 1
-  hdma_tim1_ch3.Instance->CCR |= channel_enable;//Enable dma timer 1 channel 3
+  Enable_dma_timer1Ch1();//Enable dma timer 1 channel 1
+  Enable_dma_timer1Ch3();//Enable dma timer 1 channel 3
 
   htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
   htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
   htim1.Instance->CCER |= OC3_EN;//Enable timer1 chn3 complementary output compare
 
-  htim1.Instance->BDTR |= MOE_EN;
-  htim1.Instance->CR1 |= CNT_EN;
+  htim1.Instance->BDTR |= MOE_EN;//Main output enable
+  htim1.Instance->CR1 |= CNT_EN;//counter enable
   htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
 
 
@@ -184,7 +179,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
@@ -197,9 +192,9 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }

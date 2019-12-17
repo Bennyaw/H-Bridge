@@ -1,33 +1,6 @@
-21:21:33 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
+23:20:55 **** Incremental Build of configuration Debug for project H_BridgeDriver ****
 make all 
-Building file: ../Src/timer.c
-Invoking: MCU GCC Compiler
-C:\Students\Benny\H-Bridge\H_BridgeDriver\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Students/Benny/H-Bridge/H_BridgeDriver/Inc" -I"C:/Students/Benny/H-Bridge/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Students/Benny/H-Bridge/H_BridgeDriver/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Students/Benny/H-Bridge/H_BridgeDriver/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Students/Benny/H-Bridge/H_BridgeDriver/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
-../Src/timer.c: In function 'setCHN1DutyCycle':
-../Src/timer.c:162:6: warning: unused variable 'shiftVal' [-Wunused-variable]
-  int shiftVal=0;
-      ^
-../Src/timer.c:161:6: warning: unused variable 'newCcrVal' [-Wunused-variable]
-  int newCcrVal = (float)(outPeriod)*(float)(dutyCycle_percent)/100;
-      ^
-../Src/timer.c:160:11: warning: unused variable 'crr_Val' [-Wunused-variable]
-  uint16_t crr_Val = timer->CCR1;
-           ^
-Finished building: ../Src/timer.c
- 
-Building target: H_BridgeDriver.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "H_BridgeDriver.elf" @"objects.list"   -lm
-Finished building target: H_BridgeDriver.elf
- 
-make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "H_BridgeDriver.elf" "H_BridgeDriver.hex"
-arm-none-eabi-size "H_BridgeDriver.elf"
-   text	   data	    bss	    dec	    hex	filename
-   9700	     28	   1780	  11508	   2cf4	H_BridgeDriver.elf
- 
+make: Nothing to be done for 'all'.
 
-21:21:34 Build Finished (took 1s.150ms)
+23:20:55 Build Finished (took 298ms)
 

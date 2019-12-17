@@ -123,12 +123,12 @@ int main(void)
   setTimerCCRVal(&htim1,channel_3,0);
 
   reset_deadtime_dtg_bits();
-  setDeadTime_ns(100);
+  setDeadTime_ns(250);
 
-  setPrescalerValue(4);//APB2 CLK frequency is 32MHz. Please double check again.
+  setPrescalerValue(1);//APB2 CLK frequency is 32MHz. Please double check again.
   setTimerOutputFrequency_Hz(8*kHz);
   setTimer1Chn1_OutputDutyCycle(50);
-  setTimer1Chn3_OutputDutyCycle(30);
+  setTimer1Chn3_OutputDutyCycle(50);
   setOffSet(50);//set the duty cycle of the signal first, then only setOffset.
 
   Enable_dma_timer1Ch1();//Enable dma timer 1 channel 1
@@ -179,7 +179,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
@@ -192,9 +192,9 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }

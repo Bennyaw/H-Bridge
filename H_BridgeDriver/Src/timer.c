@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
 #include <math.h>
+#include "RCCstm32f1.h"
 
 extern TIM_HandleTypeDef htim1;
 extern uint16_t bufferCCR1[2];
@@ -46,16 +47,40 @@ void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCom
 
 }
 
+int getApb2_divider(void){
+	int divider;
+	uint8_t divValue = (Rcc->Cfgr & apb2dividerMask)>>11;
+	switch(divValue){
+		case 0:
+		case 1:
+		case 2:
+		case 3: divider = 1;
+		break;
+		case 4: divider = 2;
+		break;
+		case 5: divider = 4;
+		break;
+		case 6:divider = 8;
+		break;
+		case 7:divider = 16;
+		break;
+		default: divider = 0;
+	};
+
+	return divider;
+}
+
 float apb2_clk_int_period(void){
 	float period;
-	if(IS_RCC_PCLK(RCC_CFGR_PPRE2_DIV1))//apb2 freq is not divided
+	int apb2divider = getApb2_divider();
+	if(apb2divider==1)//apb2 freq is not divided
 		period = ((float)1/(float)HAL_RCC_GetPCLK2Freq())*(float)(pow(10,9));
 	else
 		period = ((float)1/(float)(HAL_RCC_GetPCLK2Freq()*2))*(float)(pow(10,9));
 	return period;
 }
 
-int getdtgMultiplier(uint32_t deadTime_ns , int period_clk_base){
+int getdtgMultiplier(uint32_t deadTime_ns , float period_clk_base){
 
 	uint8_t dtg7to5;
 
@@ -78,7 +103,7 @@ int getdtgMultiplier(uint32_t deadTime_ns , int period_clk_base){
 	return dtg7to5;
 }
 
-int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base){
+int getdtgBitsVal(uint32_t deadTime_ns , float period_clk_base){
 
 	uint8_t dtgVal;
 
@@ -120,17 +145,16 @@ void dutyCycleInit(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t arr_val){
 
 
 void setTimerOutputFrequency_Hz(float out_freq_Hz){
-//need to check prescaler val
 	uint16_t arrVal=0;
-	int prescaler=getPrescalerValue();
+	uint16_t prescaler=getPrescalerValue();
 	do{
 		float prescaled_pclk2_period = apb2_clk_int_period()*prescaler;
 		float outFreq_period = (float)1/out_freq_Hz;
 		float pclk2_period_ns = prescaled_pclk2_period*((float)1/(float)(pow(10,9)));
 		arrVal = outFreq_period/pclk2_period_ns;
-		if(arrVal<=0 || arrVal<1000 )
-			prescaler--;
-	}while(arrVal<=0 || arrVal<1000);
+		if(arrVal<=0 || arrVal<200 )
+			setPrescalerValue(prescaler--);
+	}while(arrVal<=0 || arrVal<200);
 
 	setARRValue(arrVal);
 }

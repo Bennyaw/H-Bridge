@@ -93,14 +93,14 @@ enum deadTimeMultiplier{
 #define setARRValue(val)					htim1.Instance->ARR = val
 #define setPrescalerValue(val)				htim1.Instance->PSC = val-1
 
-#define getPrescalerValue()					(htim1.Instance->PSC)+1
+#define getPrescalerValue()					((htim1.Instance->PSC)+1)
 #define getARRValue()						htim1.Instance->ARR
 
 void dutyCycleInit(TIM_HandleTypeDef *timer,uint32_t channel,uint16_t arr_val);
 void setTimerCCRVal(TIM_HandleTypeDef *timer,uint32_t channel,uint32_t outputCompareVal);
 float apb2_clk_int_period(void);
-int getdtgMultiplier(uint32_t deadTime_ns,int period_clk_base);
-int getdtgBitsVal(uint32_t deadTime_ns , int period_clk_base);
+int getdtgMultiplier(uint32_t deadTime_ns,float period_clk_base);
+int getdtgBitsVal(uint32_t deadTime_ns , float period_clk_base);
 void setDeadTime_ns(uint32_t deadTime_ns);
 void timer_Init(void);
 void setTimerOutputFrequency_Hz(float out_freq_Hz);
@@ -109,4 +109,5 @@ void setBufferValChn3(int riseEdge,int fallEdge);
 void setBufferValChn1(int riseEdge,int fallEdge);
 void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle);
 void setOffSet(volatile double offset_percent);
+int getApb2_divider(void);
 #endif /* __TIMER_H__ */
