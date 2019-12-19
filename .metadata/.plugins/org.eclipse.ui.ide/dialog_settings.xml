@@ -8,6 +8,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Students\Bennyaw\SMPS\H-Bridge"/>
 			<item value="C:\Students\Bennyaw\Timer"/>
 			<item value="C:\Students\Bennyaw\UART"/>
 		</list>
