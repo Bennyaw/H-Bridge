@@ -4,21 +4,33 @@
 #include "stm32f1xx_hal.h"
 #include <math.h>
 #include "RCCstm32f1.h"
+#include "dma.h"
 
 extern TIM_HandleTypeDef htim1;
 extern uint16_t bufferCCR1[2];
+extern uint16_t bufferCCR2[2];
 extern uint16_t bufferCCR3[2];
 double offset;
 int edgeIntervalChn1;
 int edgeIntervalChn3;
 
+/*Read rising edge and falling edge value*/
 #define getChn1RiseEdge()	bufferCCR1[1]
 #define getChn1FallEdge()	bufferCCR1[0]
+
+#define getChn2RiseEdge()	bufferCCR2[1]
+#define getChn2FallEdge()	bufferCCR2[0]
+
 #define getChn3RiseEdge()	bufferCCR3[1]
 #define getChn3FallEdge()	bufferCCR3[0]
 
+/*Set rising edge and falling edge value*/
 #define setChn1RiseEdge(val)	bufferCCR1[1]=val
 #define setChn1FallEdge(val)	bufferCCR1[0]=val
+
+#define setChn2RiseEdge(val)	bufferCCR2[1]=val
+#define setChn2FallEdge(val)	bufferCCR2[0]=val
+
 #define setChn3RiseEdge(val)	bufferCCR3[1]=val
 #define setChn3FallEdge(val)	bufferCCR3[0]=val
 
@@ -164,6 +176,11 @@ void setBufferValChn1(int riseEdge,int fallEdge){
 	setChn1FallEdge(fallEdge);
 }
 
+void setBufferValChn2(int riseEdge,int fallEdge){
+	setChn2RiseEdge(riseEdge);
+	setChn2FallEdge(fallEdge);
+}
+
 void setBufferValChn3(int riseEdge,int fallEdge){
 	setChn3RiseEdge(riseEdge);
 	setChn3FallEdge(fallEdge);
@@ -172,24 +189,40 @@ void setBufferValChn3(int riseEdge,int fallEdge){
 void setTimer1Chn1_OutputDutyCycle(volatile double dutyCycle_percent){
 	int riseEdge,fallEdge;
 	volatile int arrVal = getARRValue();
-	edgeIntervalChn1= (dutyCycle_percent/100)*arrVal;
+	edgeIntervalChn1= (dutyCycle_percent/100)*arrVal;//minimum 5% duty cycle
 	riseEdge = (arrVal*0.05);
 	fallEdge = riseEdge+edgeIntervalChn1;
 	setBufferValChn1(riseEdge,fallEdge);
+}
+
+void setTimer1Chn2_OutputDutyCycle(volatile double dutyCycle_percent){
+	int riseEdge,fallEdge;
+	volatile int arrVal = getARRValue();
+	edgeIntervalChn1= (dutyCycle_percent/100)*arrVal;
+	riseEdge = (arrVal*0.05);//minimum 5% duty cycle
+	fallEdge = riseEdge+edgeIntervalChn1;
+	setBufferValChn2(riseEdge,fallEdge);
 }
 
 void setTimer1Chn3_OutputDutyCycle(volatile double dutyCycle_percent){
 	int riseEdge,fallEdge;
 	volatile int arrVal = getARRValue();
 	edgeIntervalChn3= (dutyCycle_percent/100)*arrVal;
-	riseEdge = (arrVal*0.05);
+	riseEdge = (arrVal*0.05);//minimum 5% duty cycle
 	fallEdge = riseEdge+edgeIntervalChn3;
 	setBufferValChn3(riseEdge,fallEdge);
 }
 
-void setOffSet(volatile double offset_percent){
+void setOffSet_Chn3(volatile double offset_percent){
 	uint32_t offsetVal = (offset_percent/100)*edgeIntervalChn1;
 	uint16_t riseVal = getChn3RiseEdge();
 	uint16_t fallVal = getChn3FallEdge();
 	setBufferValChn3((riseVal+offsetVal),(fallVal+offsetVal));
+}
+
+void setOffSet_Chn2(volatile double offset_percent){
+	uint32_t offsetVal = (offset_percent/100)*edgeIntervalChn1;
+	uint16_t riseVal = getChn3RiseEdge();
+	uint16_t fallVal = getChn3FallEdge();
+	setBufferValChn2((riseVal+offsetVal),(fallVal+offsetVal));
 }

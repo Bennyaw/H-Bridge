@@ -74,6 +74,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 int ARR_VAL;
 int PSC_VAL;
 uint16_t bufferCCR1[2] = {300,100};
+uint16_t bufferCCR2[2] = {300,100};
 uint16_t bufferCCR3[2] = {650,550};
 
 
@@ -126,22 +127,23 @@ int main(void)
   setDeadTime_ns(250);
 
   setPrescalerValue(1);//APB2 CLK frequency is 32MHz. Please double check again.
-  setTimerOutputFrequency_Hz(8*kHz);
+  setTimerOutputFrequency_Hz(160*kHz);
   setTimer1Chn1_OutputDutyCycle(50);
   setTimer1Chn3_OutputDutyCycle(50);
-  setOffSet(50);//set the duty cycle of the signal first, then only setOffset.
+  setOffSet_Chn3(35);//set the duty cycle of the signal first, then only setOffset.
 
   Enable_dma_timer1Ch1();//Enable dma timer 1 channel 1
   Enable_dma_timer1Ch3();//Enable dma timer 1 channel 3
 
-  htim1.Instance->CCER |= OC1_COMPLEMENT_EN;//Enable timer1 chn1 complementary output compare
-  htim1.Instance->CCER |= OC3_COMPLEMENT_EN;//Enable timer1 chn2 complementary output compare
-  htim1.Instance->CCER |= OC1_EN;//Enable timer1 chn1 complementary output compare
-  htim1.Instance->CCER |= OC3_EN;//Enable timer1 chn3 complementary output compare
+  enable_tim1Chn1_complementaryOC();//Enable timer1 chn1 complementary output compare
+  enable_tim1Chn3_complementaryOC();//Enable timer1 chn2 complementary output compare
+  enable_tim1Chn1_OC();//Enable timer1 chn1 output compare
+  enable_tim1Chn3_OC();//Enable timer1 chn3 output compare
 
-  htim1.Instance->BDTR |= MOE_EN;//Main output enable
-  htim1.Instance->CR1 |= CNT_EN;//counter enable
-  htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
+  enable_mainOutput();//Main output enable
+  enable_counter();//counter enable
+  enable_dma_cap_com_request(dma_ccr1_request_en|dma_ccr3_request_en);
+  //htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
 
 
   /* USER CODE END 2 */

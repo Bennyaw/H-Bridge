@@ -13,6 +13,10 @@
 
 #define channel_enable	1<<0
 
+#define Enable_dma_timer1Ch1()				hdma_tim1_ch1.Instance->CCR |= channel_enable
+#define Enable_dma_timer1Ch2()				hdma_tim1_ch2.Instance->CCR |= channel_enable
+#define Enable_dma_timer1Ch3()				hdma_tim1_ch3.Instance->CCR |= channel_enable
+
 void dma_Init(void);
 
 #endif /* __DMA_H__ */
