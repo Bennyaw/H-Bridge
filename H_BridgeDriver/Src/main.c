@@ -10,7 +10,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2019 STMicroelectronics
+  * COPYRIGHT(c) 2020 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -118,7 +118,6 @@ int main(void)
 
   timer_Init();
   dma_Init();
-
   setCounterValue(0);
   setTimerCCRVal(&htim1,channel_1,0);
   setTimerCCRVal(&htim1,channel_3,0);
@@ -127,7 +126,7 @@ int main(void)
   setDeadTime_ns(250);
 
   setPrescalerValue(1);//APB2 CLK frequency is 32MHz. Please double check again.
-  setTimerOutputFrequency_Hz(160*kHz);
+  setTimerOutputFrequency_Hz(10*kHz);
   setTimer1Chn1_OutputDutyCycle(50);
   setTimer1Chn3_OutputDutyCycle(50);
   setOffSet_Chn3(35);//set the duty cycle of the signal first, then only setOffset.
@@ -141,6 +140,7 @@ int main(void)
   enable_tim1Chn3_OC();//Enable timer1 chn3 output compare
 
   enable_mainOutput();//Main output enable
+  while(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0) != GPIO_PIN_RESET){};
   enable_counter();//counter enable
   enable_dma_cap_com_request(dma_ccr1_request_en|dma_ccr3_request_en);
   //htim1.Instance->DIER |= dma_ccr1_request_en|dma_ccr3_request_en;	//Enable Capture Compare 1 DMA request,Enable Capture Compare 3 DMA request
@@ -301,10 +301,18 @@ static void MX_DMA_Init(void)
 static void MX_GPIO_Init(void)
 {
 
+  GPIO_InitTypeDef GPIO_InitStruct;
+
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 
